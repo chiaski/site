@@ -15,10 +15,9 @@ module.exports = {
   // so we define the main JS and Sass files, both under
   // the './src' directory
   entry: {
-    'main': './src/scripts/main.js',
-    'theme-main': './src/styles/main.scss',
-    'theme-portfolio': './src/styles/portfolio.scss',
-    'theme-landing': './src/styles/landing.scss'
+    'main': './src/styles/main.scss',
+    'portfolio': './src/styles/portfolio.scss',
+    'landing': './src/styles/landing.scss'
   },
 
   // ['./src/scripts/main.js', './src/styles/main.scss', './src/styles/portfolio.scss'],
