@@ -112,6 +112,7 @@ h2 {
 
     width: auto;
     margin: 1em auto;
+    margin-bottom: 5vh;
 
     ._project-desc {
       font-family: 'RecifeDisplay Book';
@@ -132,11 +133,17 @@ h2 {
   }
 
 
+  ._project:hover > p {
+    background: yellow;
+  }
+
+
   // project alignment
   @media only screen and (min-width: 1200px) {
 
     #kumu {
       max-width: 550px;
+      margin-left: 2em;
     }
 
     #spotify {
@@ -146,9 +153,27 @@ h2 {
       max-width: 350px;
     }
 
+
     #developh {
       max-width: 550px;
     }
+
+
+    #khaenriah {
+      max-width: 400px;
+    }
+
+    #punishing {
+      max-width: 300px;
+    }
+
+    #graphics {
+      max-width: 600px;
+      margin-top: 50px;
+      margin-right: 0;
+      margin-left: auto;
+    }
+
   }
 
 }
@@ -185,7 +210,18 @@ h2 {
   a {
     padding: 1em 0;
     margin-bottom: 1em;
+    border: none;
     white-space: normal;
+  }
+
+  a:hover {
+    border: none;
+
+
+  }
+
+  a:hover > p._title {
+    background: yellow;
   }
 
   p {

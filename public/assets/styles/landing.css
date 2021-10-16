@@ -60,7 +60,8 @@ h2 {
     width: 100%; }
   .stuff ._project {
     width: auto;
-    margin: 1em auto; }
+    margin: 1em auto;
+    margin-bottom: 5vh; }
     .stuff ._project ._project-desc {
       font-family: 'RecifeDisplay Book';
       float: right;
@@ -69,16 +70,28 @@ h2 {
       margin: 0 auto; }
   .stuff ._project:hover {
     cursor: pointer; }
+  .stuff ._project:hover > p {
+    background: yellow; }
   @media only screen and (min-width: 1200px) {
     .stuff #kumu {
-      max-width: 550px; }
+      max-width: 550px;
+      margin-left: 2em; }
     .stuff #spotify {
       margin-left: auto;
       margin-right: 0;
       margin-top: 50px;
       max-width: 350px; }
     .stuff #developh {
-      max-width: 550px; } }
+      max-width: 550px; }
+    .stuff #khaenriah {
+      max-width: 400px; }
+    .stuff #punishing {
+      max-width: 300px; }
+    .stuff #graphics {
+      max-width: 600px;
+      margin-top: 50px;
+      margin-right: 0;
+      margin-left: auto; } }
 
 .stuff-text a {
   display: inline-block;
@@ -100,7 +113,14 @@ h2 {
 .stuff-manifesto a {
   padding: 1em 0;
   margin-bottom: 1em;
+  border: none;
   white-space: normal; }
+
+.stuff-manifesto a:hover {
+  border: none; }
+
+.stuff-manifesto a:hover > p._title {
+  background: yellow; }
 
 .stuff-manifesto p {
   margin: 0;
