@@ -1,4 +1,18 @@
 @font-face {
+  font-family: 'RecifeDisplay Book';
+  src: url(../fonts/RecifeDisplay-Book.woff2) format("woff2"), url(../fonts/RecifeDisplay-Book.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'RecifeDisplay Book';
+  src: url(../fonts/RecifeDisplay-BookItalic.woff2) format("woff2"), url(../fonts/RecifeDisplay-BookItalic.woff) format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
   font-family: 'Union';
   src: url(../fonts/Union-Bold.woff2) format("woff2"), url(../fonts/Union-Bold.woff) format("woff");
   font-weight: bold;
@@ -41,17 +55,47 @@ body {
 
 h1 {
   font-weight: normal;
-  font-size: 24px; }
+  font-size: 24px;
+  margin: .5em 0; }
 
 h2 {
   font-weight: normal;
-  font-size: 18px; }
+  font-size: 18px;
+  margin: .5em 0; }
+
+h3 {
+  margin: .5em 0; }
 
 p {
-  font-size: 14px; }
+  font-size: 14px;
+  line-height: 120%; }
 
 img {
   max-width: 100%; }
+
+hr {
+  margin: 5vh 0;
+  border: 0; }
+
+img.img-full {
+  width: 100%;
+  object-fit: contain; }
+
+img.img-half {
+  max-width: 50%; }
+
+.navigation {
+  padding: .5em 1em;
+  position: fixed;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  vertical-align: center;
+  align-items: center; }
+  .navigation .navigation-content {
+    padding: 0 1em;
+    margin-left: auto;
+    margin-right: auto; }
 
 .container {
   margin-right: auto;
@@ -64,16 +108,48 @@ img {
 
 .main {
   background: #ededed;
-  padding: 1em;
+  padding: 80px 1em 1em 1em;
+  margin: 0 0 10vh 0;
   display: flex;
   flex-wrap: wrap; }
+
+.main-content {
+  max-width: 100%; }
 
 .footer {
   margin-right: auto;
   margin-left: auto;
-  padding: 1em;
+  padding: 10vh 1em;
   margin: 0;
+  min-height: 30vh;
   width: 100%;
   max-width: 100%;
-  background: #141313; }
+  background: #141313;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  vertical-align: center;
+  align-items: center; }
+  .footer h1 {
+    color: #ededed;
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: 0 auto; }
+    .footer h1 em {
+      font-family: 'RecifeDisplay Book'; }
+  .footer .footer-newsletter {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    color: #ededed; }
+    .footer .footer-newsletter input {
+      font-size: 18px;
+      padding: .5em; }
+    .footer .footer-newsletter input[type="text"] {
+      width: 50%;
+      max-width: 300px; }
+    .footer .footer-newsletter input[type="submit"]:hover {
+      cursor: pointer; }
 
