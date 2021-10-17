@@ -17,10 +17,11 @@ a {
 h1 {
   font-family: 'RecifeDisplay Book';
   font-size: 2em;
+  margin: 2em 0;
 }
 
 h2 {
-  margin: 2em 0;
+  margin: 1em 0;
 }
 
 // containers
@@ -30,7 +31,7 @@ h2 {
 
   max-width: 100vw;
 
-  @media only screen and (max-width: 850px) {
+  @media only screen and (max-width: 800px) {
     flex-wrap: wrap;
   }
 }
@@ -69,7 +70,7 @@ h2 {
 
 
 
-  @media only screen and (max-width: 850px) {
+  @media only screen and (max-width: 800px) {
 
     max-width: none;
     width: 100%;
@@ -79,8 +80,9 @@ h2 {
 }
 
 
-.main-left p:hover a:not(:hover) {
-  // reduce opacity if mateiral isnt hovered over
+.main-left p:hover a:not(:hover),
+.navigation-links:hover a:not(:hover) {
+  // reduce opacity if material isnt hovered over
   opacity: 0.5;
 }
 
@@ -89,7 +91,7 @@ h2 {
   padding: 0 1em;
   max-width: 70%;
 
-  @media only screen and (max-width: 850px) {
+  @media only screen and (max-width: 800px) {
     margin-left: 0;
     max-width: 100%;
   }
@@ -112,7 +114,7 @@ h2 {
 
     width: auto;
     margin: 1em auto;
-    margin-bottom: 5vh;
+    margin-bottom: 7.5vh;
 
     ._project-desc {
       font-family: 'RecifeDisplay Book';
@@ -133,24 +135,19 @@ h2 {
   }
 
 
-  ._project:hover > p {
-    background: yellow;
-  }
-
 
   // project alignment
   @media only screen and (min-width: 1200px) {
 
     #kumu {
-      max-width: 550px;
-      margin-left: 2em;
+      max-width: 480px;
     }
 
     #spotify {
-      margin-left: auto;
+      margin-left: 1em;
       margin-right: 0;
       margin-top: 50px;
-      max-width: 350px;
+      max-width: 280px;
     }
 
 
@@ -168,7 +165,7 @@ h2 {
     }
 
     #graphics {
-      max-width: 600px;
+      max-width: 700px;
       margin-top: 50px;
       margin-right: 0;
       margin-left: auto;
@@ -195,7 +192,7 @@ h2 {
     border-bottom: $b 1px solid;
   }
 
-  @media only screen and (max-width: 850px) {
+  @media only screen and (max-width: 800px) {
 
     a {
       width: 100%;
@@ -239,4 +236,35 @@ h2 {
   display: flex;
   flex-wrap: wrap;
 
+}
+
+#about {
+
+  width: calc(100vw - 33%);
+  padding-left: 2em;
+
+  h1 {
+    margin: 1em 0;
+  }
+
+  img.face {
+    max-width: 600px;
+    margin: 0 auto;
+    ;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  p.big {
+    font-size: 32px;
+  }
+
+  @media only screen and (max-width: 800px) {
+
+    width: 100%;
+    padding: 1em;
+    margin: 0;
+  }
 }

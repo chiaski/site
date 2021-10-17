@@ -66,6 +66,12 @@ $g: #acacac; // gray
 * {
   box-sizing: border-box;
   font-family: "Union", sans-serif;
+  scroll-margin-top: 7.5vh;
+}
+
+html {
+  scroll-behavior: smooth;
+
 }
 
 body {
@@ -129,15 +135,19 @@ img.img-half {
   padding: .5em 1em;
   position: fixed;
   height: 80px;
+  width: 100%;
   display: flex;
   justify-content: center;
   vertical-align: center;
   align-items: center;
 
   .navigation-content {
+    width: 100%;
     padding: 0 1em;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    justify-content: space-between;
   }
 
 }
@@ -156,7 +166,7 @@ img.img-half {
 
 .main {
   background: $bg;
-  padding: 80px 1em 1em 1em;
+  padding: 60px 1em 1em 1em;
   margin: 0 0 10vh 0;
   display: flex;
   flex-wrap: wrap;
