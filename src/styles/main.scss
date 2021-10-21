@@ -178,6 +178,10 @@ img.img-half {
   mix-blend-mode: difference;
   z-index: 1;
   pointer-events: none;
+
+  @media only screen and (max-width: 800px) {
+    display: none;
+  }
 }
 
 
@@ -288,6 +292,7 @@ img.img-half {
   @media only screen and (max-width: 800px) {
 
     padding: 0;
+    padding-top: 100px;
   }
 }
 
@@ -338,6 +343,7 @@ img.img-half {
     }
 
   }
+
 }
 
 

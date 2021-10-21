@@ -123,6 +123,9 @@ img.img-half {
   mix-blend-mode: difference;
   z-index: 1;
   pointer-events: none; }
+  @media only screen and (max-width: 800px) {
+    .cursor {
+      display: none; } }
 
 .navigation {
   position: fixed;
@@ -193,7 +196,8 @@ img.img-half {
   flex-wrap: wrap; }
   @media only screen and (max-width: 800px) {
     .main {
-      padding: 0; } }
+      padding: 0;
+      padding-top: 100px; } }
 
 .main-content {
   max-width: 100%; }
