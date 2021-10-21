@@ -8,7 +8,7 @@ h1 {
   margin: 2em 0 0 0; }
 
 h2 {
-  margin: 1em 0; }
+  margin: 2em 0; }
 
 .main {
   display: flex;
@@ -17,7 +17,7 @@ h2 {
     .main {
       flex-wrap: wrap; } }
 
-.stuff-intro:hover a:not(:hover) {
+.intro:hover a:not(:hover) {
   opacity: 0.5; }
 
 #about:hover a:not(:hover) {
