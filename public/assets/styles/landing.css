@@ -1,14 +1,11 @@
-* {
-  box-sizing: border-box; }
-
 a {
   color: #141313;
   text-decoration: none; }
 
 h1 {
-  font-family: 'RecifeDisplay Book';
   font-size: 2em;
-  margin: 2em 0; }
+  letter-spacing: -.5px;
+  margin: 2em 0 0 0; }
 
 h2 {
   margin: 1em 0; }
@@ -20,72 +17,74 @@ h2 {
     .main {
       flex-wrap: wrap; } }
 
-.main-left {
-  width: auto;
-  width: 30%;
-  max-width: 350px;
-  padding: 0 1em; }
-  .main-left sup {
-    font-size: 9px; }
-  .main-left p {
-    font-size: 18px; }
-  .main-left p._projects-navigate a {
-    color: #141313; }
-  .main-left p._projects-navigate a:target {
-    background: #141313;
-    color: #141313; }
-  .main-left h1._title {
-    font-size: 14px;
-    font-family: 'RecifeDisplay Book'; }
-  @media only screen and (max-width: 800px) {
-    .main-left {
-      max-width: none;
-      width: 100%; } }
+.stuff-intro:hover a:not(:hover) {
+  opacity: 0.5; }
 
-.main-left p:hover a:not(:hover),
-.navigation-links:hover a:not(:hover) {
+#about:hover a:not(:hover) {
   opacity: 0.5; }
 
 .main-content {
   padding: 0 1em;
-  max-width: 70%; }
+  margin-top: 400px; }
   @media only screen and (max-width: 800px) {
     .main-content {
       margin-left: 0;
       max-width: 100%; } }
 
+.photo {
+  position: absolute;
+  z-index: 0;
+  width: 100vw;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .photo h1 {
+    text-align: center;
+    font-size: 124px;
+    letter-spacing: -5px;
+    transform: translateY(-0.5em); }
+
 .stuff {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
+  .stuff h1,
   .stuff h2 {
     width: 100%; }
+  .stuff h2 {
+    margin: 1em 0; }
   .stuff ._project {
     width: auto;
     margin: 1em auto;
-    margin-bottom: 7.5vh; }
+    margin-bottom: 7.5vh;
+    filter: grayscale(0); }
+    .stuff ._project p {
+      font-size: 18px; }
     .stuff ._project ._project-desc {
-      font-family: 'RecifeDisplay Book';
       float: right;
-      font-size: 11px; }
+      font-size: 12px; }
     .stuff ._project img {
       margin: 0 auto; }
   .stuff ._project:hover {
-    cursor: pointer; }
-  @media only screen and (min-width: 1200px) {
+    cursor: pointer;
+    filter: grayscale(1); }
+  @media only screen and (min-width: 800px) {
     .stuff #kumu {
-      max-width: 480px; }
+      max-width: 600px; }
     .stuff #spotify {
       margin-left: 1em;
       margin-right: 0;
-      margin-top: 50px;
-      max-width: 280px; }
+      margin-top: 80px;
+      max-width: 400px; }
     .stuff #developh {
       max-width: 550px; }
     .stuff #khaenriah {
       max-width: 400px; }
+    .stuff #ibotoph {
+      max-width: 400px; }
     .stuff #punishing {
-      max-width: 300px; }
+      max-width: 350px; }
     .stuff #graphics {
       max-width: 700px;
       margin-top: 50px;
@@ -97,6 +96,8 @@ h2 {
   width: 48%;
   padding: 1em 0;
   border-bottom: #acacac 1px solid;
+  letter-spacing: -.2px;
+  font-size: 18px;
   line-height: 120%;
   white-space: nowrap;
   overflow: hidden;
@@ -110,43 +111,44 @@ h2 {
     width: 100%; } }
 
 .stuff-manifesto a {
-  padding: 1em 0;
-  margin-bottom: 1em;
-  border: none;
-  white-space: normal; }
-
-.stuff-manifesto a:hover {
-  border: none; }
-
-.stuff-manifesto a:hover > p._title {
-  background: yellow; }
+  width: 100%; }
 
 .stuff-manifesto p {
   margin: 0;
-  font-size: 1em; }
+  font-size: 1em;
+  display: inline; }
 
 .stuff-manifesto p._title {
-  margin-bottom: .5em; }
+  display: inline-block;
+  margin-bottom: .5em;
+  min-width: 20%; }
 
 #rss {
   display: flex;
   flex-wrap: wrap; }
 
 #about {
-  width: calc(100vw - 33%);
-  padding-left: 2em; }
+  display: flex;
+  justify-content: space-between; }
+  #about .about-links {
+    max-width: 200px;
+    margin-left: 5vw; }
   #about h1 {
     margin: 1em 0; }
   #about img.face {
-    max-width: 600px;
-    margin: 0 auto; }
+    width: 300px; }
+  #about li,
   #about p {
-    font-size: 18px; }
-  #about p.big {
-    font-size: 32px; }
+    max-width: 550px;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    letter-spacing: -.5px; }
   @media only screen and (max-width: 800px) {
     #about {
       width: 100%;
       padding: 1em;
-      margin: 0; } }
+      margin: 0; }
+      #about .about-links {
+        max-width: 100%;
+        margin: 0; } }
 

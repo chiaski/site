@@ -5,9 +5,6 @@ $text: #141313;
 $b: #141313;
 $g: #acacac; // gray
 
-* {
-  box-sizing: border-box;
-}
 
 a {
   color: $text;
@@ -15,9 +12,9 @@ a {
 }
 
 h1 {
-  font-family: 'RecifeDisplay Book';
   font-size: 2em;
-  margin: 2em 0;
+  letter-spacing: -.5px;
+  margin: 2em 0 0 0;
 }
 
 h2 {
@@ -36,52 +33,13 @@ h2 {
   }
 }
 
-.main-left {
-  width: auto;
-  width: 30%;
-  max-width: 350px;
-  padding: 0 1em;
 
-  sup {
-    font-size: 9px;
-  }
-
-  p {
-    font-size: 18px;
-  }
-
-  p._projects-navigate {
-
-    a {
-      color: $b;
-    }
-
-    a:target {
-      background: $b;
-      color: $text;
-    }
-
-  }
-
-  h1._title {
-    font-size: 14px;
-    font-family: 'RecifeDisplay Book';
-  }
-
-
-
-  @media only screen and (max-width: 800px) {
-
-    max-width: none;
-    width: 100%;
-
-  }
-
+.stuff-intro:hover a:not(:hover) {
+  // reduce opacity if material isnt hovered over
+  opacity: 0.5;
 }
 
-
-.main-left p:hover a:not(:hover),
-.navigation-links:hover a:not(:hover) {
+#about:hover a:not(:hover) {
   // reduce opacity if material isnt hovered over
   opacity: 0.5;
 }
@@ -89,7 +47,7 @@ h2 {
 
 .main-content {
   padding: 0 1em;
-  max-width: 70%;
+  margin-top: 400px;
 
   @media only screen and (max-width: 800px) {
     margin-left: 0;
@@ -97,6 +55,25 @@ h2 {
   }
 }
 
+// decorative
+
+.photo {
+  position: absolute;
+  z-index: 0;
+  width: 100vw;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  h1 {
+    text-align: center;
+    font-size: 124px;
+    letter-spacing: -5px;
+    transform: translateY(-.5em);
+  }
+
+}
 
 // projects
 
@@ -106,8 +83,13 @@ h2 {
   justify-content: space-between;
   flex-wrap: wrap;
 
+  h1,
   h2 {
     width: 100%;
+  }
+
+  h2 {
+    margin: 1em 0;
   }
 
   ._project {
@@ -115,11 +97,15 @@ h2 {
     width: auto;
     margin: 1em auto;
     margin-bottom: 7.5vh;
+    filter: grayscale(0);
+
+    p {
+      font-size: 18px;
+    }
 
     ._project-desc {
-      font-family: 'RecifeDisplay Book';
       float: right;
-      font-size: 11px;
+      font-size: 12px;
     }
 
     img {
@@ -132,22 +118,23 @@ h2 {
 
   ._project:hover {
     cursor: pointer;
+    filter: grayscale(1);
   }
 
 
 
   // project alignment
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 800px) {
 
     #kumu {
-      max-width: 480px;
+      max-width: 600px;
     }
 
     #spotify {
       margin-left: 1em;
       margin-right: 0;
-      margin-top: 50px;
-      max-width: 280px;
+      margin-top: 80px;
+      max-width: 400px;
     }
 
 
@@ -160,8 +147,12 @@ h2 {
       max-width: 400px;
     }
 
+    #ibotoph {
+      max-width: 400px;
+    }
+
     #punishing {
-      max-width: 300px;
+      max-width: 350px;
     }
 
     #graphics {
@@ -182,6 +173,8 @@ h2 {
     width: 48%;
     padding: 1em 0;
     border-bottom: $g 1px solid;
+    letter-spacing: -.2px;
+    font-size: 18px;
     line-height: 120%;
     white-space: nowrap;
     overflow: hidden;
@@ -205,29 +198,20 @@ h2 {
 .stuff-manifesto {
 
   a {
-    padding: 1em 0;
-    margin-bottom: 1em;
-    border: none;
-    white-space: normal;
+    width: 100%;
   }
 
-  a:hover {
-    border: none;
-
-
-  }
-
-  a:hover > p._title {
-    background: yellow;
-  }
 
   p {
     margin: 0;
     font-size: 1em;
+    display: inline;
   }
 
   p._title {
+    display: inline-block;
     margin-bottom: .5em;
+    min-width: 20%;
   }
 }
 
@@ -240,25 +224,30 @@ h2 {
 
 #about {
 
-  width: calc(100vw - 33%);
-  padding-left: 2em;
+  display: flex;
+  justify-content: space-between;
+
+
+  .about-links {
+    max-width: 200px;
+    margin-left: 5vw;
+  }
 
   h1 {
     margin: 1em 0;
   }
 
   img.face {
-    max-width: 600px;
-    margin: 0 auto;
-    ;
+    width: 300px;
   }
 
+
+  li,
   p {
-    font-size: 18px;
-  }
-
-  p.big {
-    font-size: 32px;
+    max-width: 550px;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    letter-spacing: -.5px;
   }
 
   @media only screen and (max-width: 800px) {
@@ -266,5 +255,11 @@ h2 {
     width: 100%;
     padding: 1em;
     margin: 0;
+
+    .about-links {
+      max-width: 100%;
+      margin: 0;
+    }
+
   }
 }
