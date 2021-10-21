@@ -108,6 +108,9 @@ h2.intro {
 }
 
 h3 {
+  font-weight: normal;
+  font-size: 1.5em;
+  letter-spacing: -.5px;
   margin: .5em 0;
 }
 
@@ -125,6 +128,13 @@ hr {
   border: 0;
 }
 
+small {
+  letter-spacing: .5px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-variant: small-caps;
+}
+
 a {
 
   -o-transition: all .3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -135,7 +145,6 @@ a {
 
 // image adjustments
 
-
 img.img-full {
   // stretch to fit wrapper
   width: 100%;
@@ -145,6 +154,14 @@ img.img-full {
 img.img-half {
   // half of wrapper
   max-width: 50%;
+}
+
+// grids
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 

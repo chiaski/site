@@ -44,7 +44,11 @@ h2 {
     text-align: center;
     font-size: 124px;
     letter-spacing: -5px;
-    transform: translateY(-0.5em); }
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
 
 .stuff {
   display: flex;
@@ -62,9 +66,8 @@ h2 {
     filter: grayscale(0); }
     .stuff ._project p {
       font-size: 18px; }
-    .stuff ._project ._project-desc {
-      float: right;
-      font-size: 12px; }
+    .stuff ._project small {
+      float: right; }
     .stuff ._project img {
       margin: 0 auto; }
   .stuff ._project:hover {
@@ -138,10 +141,33 @@ h2 {
     margin: 1em 0; }
   #about img.face {
     width: 300px; }
-  #about li,
-  #about p {
+  #about .about-content p {
+    text-indent: 5vw; }
+  #about .about-content li {
+    margin: 0;
+    padding: 0;
+    text-indent: 0; }
+  #about .about-content li,
+  #about .about-content p {
+    list-style-type: none;
     max-width: 550px;
     font-size: 1.5em;
+    line-height: 140%;
+    margin-bottom: 1em;
+    letter-spacing: -.5px; }
+  #about .meaning-content .meaning-grid {
+    width: 300px; }
+    #about .meaning-content .meaning-grid * {
+      width: 90%; }
+  #about .meaning-content li {
+    margin: 0;
+    padding: 0;
+    text-indent: 0; }
+  #about .meaning-content li,
+  #about .meaning-content p {
+    list-style-type: none;
+    font-size: 1.5em;
+    line-height: 140%;
     margin-bottom: 1em;
     letter-spacing: -.5px; }
   @media only screen and (max-width: 800px) {
@@ -149,9 +175,6 @@ h2 {
       width: 100%;
       padding: 0;
       margin: 0; }
-      #about li,
-      #about p {
-        font-size: 1em; }
       #about .about-links {
         max-width: 100%;
         margin: 0; } }

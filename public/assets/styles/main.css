@@ -76,6 +76,9 @@ h2.intro {
     max-width: 600px; }
 
 h3 {
+  font-weight: normal;
+  font-size: 1.5em;
+  letter-spacing: -.5px;
   margin: .5em 0; }
 
 p {
@@ -89,6 +92,12 @@ hr {
   margin: 5vh 0;
   border: 0; }
 
+small {
+  letter-spacing: .5px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-variant: small-caps; }
+
 a {
   -o-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   -webkit-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -101,6 +110,11 @@ img.img-full {
 
 img.img-half {
   max-width: 50%; }
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
 
 .container {
   padding: 0;

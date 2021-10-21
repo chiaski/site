@@ -71,7 +71,12 @@ h2 {
     text-align: center;
     font-size: 124px;
     letter-spacing: -5px;
-    transform: translateY(-.5em);
+
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 
 }
@@ -104,9 +109,8 @@ h2 {
       font-size: 18px;
     }
 
-    ._project-desc {
+    small {
       float: right;
-      font-size: 12px;
     }
 
     img {
@@ -242,13 +246,57 @@ h2 {
     width: 300px;
   }
 
+  .about-content {
 
-  li,
-  p {
-    max-width: 550px;
-    font-size: 1.5em;
-    margin-bottom: 1em;
-    letter-spacing: -.5px;
+
+    p {
+      text-indent: 5vw;
+    }
+
+    li {
+      margin: 0;
+      padding: 0;
+      text-indent: 0;
+    }
+
+    li,
+    p {
+      list-style-type: none;
+      max-width: 550px;
+      font-size: 1.5em;
+      line-height: 140%;
+      margin-bottom: 1em;
+      letter-spacing: -.5px;
+    }
+  }
+
+  .meaning-content {
+
+    .meaning-grid {
+      width: 300px;
+
+      * {
+        width: 90%;
+      }
+
+    }
+
+    p {}
+
+    li {
+      margin: 0;
+      padding: 0;
+      text-indent: 0;
+    }
+
+    li,
+    p {
+      list-style-type: none;
+      font-size: 1.5em;
+      line-height: 140%;
+      margin-bottom: 1em;
+      letter-spacing: -.5px;
+    }
   }
 
   @media only screen and (max-width: 800px) {
@@ -256,11 +304,6 @@ h2 {
     width: 100%;
     padding: 0;
     margin: 0;
-
-    li,
-    p {
-      font-size: 1em;
-    }
 
     .about-links {
       max-width: 100%;
