@@ -58,7 +58,8 @@
   <!--  problematic  -->
 
   <div class="cursor"></div>
-  <div class="photo" style="background-image: url(assets/images/ladybird.jpg);"></div>
+  <div class="photo"></div>
+  <div class="progress"></div>
 
   <!--  stuff  -->
 
@@ -93,10 +94,10 @@
 
       <div class="main">
 
-        <div class="main-content">
+        <div class="main-content" style="margin-top: 150px;">
           <div class="stuff" id="work">
 
-            <h2 class="intro" style="font-size:2em;">
+            <h2 class="intro">
               Designing, developing, making.
               <a href="#kumu" data-link="kumu">Play for Filipinos with Kumu.</a>
               <a href="#spotify">Design systems at Spotify.</a>
@@ -134,7 +135,7 @@
               <a href="https://discord.gg/developh" target="_blank">
                 <div class="_project" id="developh"> <img src="assets/portfolio/preview-developh.png">
                   <p>Developh
-                    <span class="_project-desc">Community</span>
+                    <small>Community</small>
                   </p>
                 </div>
               </a>
@@ -144,8 +145,8 @@
             <a href="https://khaenriah.com" target="_blank">
               <div class="_project" id="khaenriah">
                 <img src="assets/portfolio/preview-khaenriah.png">
-                <p>Khaenri'ah Lore Project
-                  <small>Web, Archival, Community</small>
+                <p>Khaenri'ah
+                  <small>Archive, Community</small>
                 </p>
 
               </div>
@@ -479,6 +480,17 @@
 
     function lerp(start, end, amt) {
       return (1 - amt) * start + amt * end
+    }
+
+    const images = $("._project img")
+    for (let image of images) {
+      image.addEventListener("load", fadeImg);
+      image.style.opacity = "0";
+    }
+
+    function fadeImg() {
+      this.style.transition = "opacity 2s";
+      this.style.opacity = "1";
     }
 
   </script>

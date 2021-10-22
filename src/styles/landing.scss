@@ -6,21 +6,6 @@ $b: #141313;
 $g: #acacac; // gray
 
 
-a {
-  color: $text;
-  text-decoration: none;
-}
-
-h1 {
-  font-size: 2em;
-  letter-spacing: -.5px;
-  margin: 2em 0 0 0;
-}
-
-h2 {
-  margin: 2em 0;
-}
-
 // containers
 
 .main {
@@ -66,6 +51,7 @@ h2 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  pointer-events: none;
 
   h1 {
     text-align: center;
@@ -82,6 +68,14 @@ h2 {
 }
 
 // projects
+
+#work h2.intro {
+  font-size: 2em;
+
+  @media only screen and (max-width: 800px) {
+    font-size: 1.5em;
+  }
+}
 
 .stuff {
 
@@ -107,6 +101,7 @@ h2 {
 
     p {
       font-size: 18px;
+      letter-spacing: -.5px;
     }
 
     small {
@@ -114,6 +109,7 @@ h2 {
     }
 
     img {
+      background: $g;
       margin: 0 auto;
     }
 
@@ -130,7 +126,6 @@ h2 {
 
   // project alignment
   @media only screen and (min-width: 800px) {
-
     #kumu {
       max-width: 600px;
     }
@@ -149,7 +144,7 @@ h2 {
 
 
     #khaenriah {
-      max-width: 400px;
+      max-width: 300px;
     }
 
     #ibotoph {
@@ -157,7 +152,7 @@ h2 {
     }
 
     #punishing {
-      max-width: 350px;
+      max-width: 300px;
     }
 
     #graphics {
@@ -165,15 +160,16 @@ h2 {
       margin-top: 50px;
       margin-right: 0;
       margin-left: auto;
+
     }
 
   }
-
 }
 
 .stuff-text {
 
   a {
+    opacity: 0.7;
     display: inline-block;
     width: 48%;
     padding: 1em 0;
@@ -187,6 +183,7 @@ h2 {
   }
 
   a:hover {
+    opacity: 1;
     border-bottom: $b 1px solid;
   }
 
@@ -216,7 +213,8 @@ h2 {
   p._title {
     display: inline-block;
     margin-bottom: .5em;
-    min-width: 25%;
+    width: 25%;
+    max-width: 150px;
   }
 }
 
@@ -236,6 +234,11 @@ h2 {
   .about-links {
     max-width: 200px;
     margin-left: 5vw;
+
+    a {
+      font-size: 18px;
+    }
+
   }
 
   h1 {
@@ -269,34 +272,33 @@ h2 {
       letter-spacing: -.5px;
     }
   }
+}
 
-  .meaning-content {
+.meaning-content {
 
-    .meaning-grid {
-      width: 300px;
+  .meaning-grid {
+    width: 300px;
 
-      * {
-        width: 90%;
-      }
-
+    * {
+      width: 90%;
     }
 
-    p {}
+  }
 
-    li {
-      margin: 0;
-      padding: 0;
-      text-indent: 0;
-    }
 
-    li,
-    p {
-      list-style-type: none;
-      font-size: 1.5em;
-      line-height: 140%;
-      margin-bottom: 1em;
-      letter-spacing: -.5px;
-    }
+  li {
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+  }
+
+  li,
+  p {
+    list-style-type: none;
+    font-size: 1.5em;
+    line-height: 140%;
+    margin-bottom: 1em;
+    letter-spacing: -.5px;
   }
 
   @media only screen and (max-width: 800px) {
