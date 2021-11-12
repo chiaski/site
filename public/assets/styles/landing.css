@@ -40,7 +40,7 @@
     transform: translate(-50%, -50%); }
 
 #work h2.intro {
-  font-size: 2em; }
+  font-size: 1.5em; }
   @media only screen and (max-width: 800px) {
     #work h2.intro {
       font-size: 1.5em; } }
