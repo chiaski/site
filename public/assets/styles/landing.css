@@ -1,3 +1,14 @@
+.identity-crisis {
+  min-height: 100vh;
+  padding: 0 1em; }
+  .identity-crisis .identity-crisis-inner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+
 .main {
   display: flex;
   max-width: 100vw; }
