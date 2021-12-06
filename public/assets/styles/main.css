@@ -24,7 +24,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  background: #ededed;
+  background: #dce3dc;
   font-family: "Union", sans-serif;
   margin: 0;
   padding: 0; }
@@ -108,8 +108,7 @@ img.img-half {
 .container {
   padding: 0;
   margin: 0 auto;
-  width: 100%;
-  background: #ededed; }
+  width: 100%; }
   .container .container-wrapper {
     max-width: 1400px;
     margin: 0 auto; }
@@ -142,7 +141,7 @@ img.img-half {
   align-items: center;
   z-index: 999;
   backdrop-filter: blur(1.5px);
-  background: linear-gradient(#ededed 10%, rgba(237, 237, 237, 0)); }
+  background: linear-gradient(#dce3dc 10%, rgba(237, 237, 237, 0)); }
   .navigation .navigation-content {
     width: 100%;
     max-width: 1400px;
@@ -197,7 +196,6 @@ img.img-half {
   opacity: 0.5; }
 
 .main {
-  background: #ededed;
   padding: 1em;
   padding-top: 100px;
   display: flex;
@@ -220,9 +218,9 @@ img.img-half {
 
 .footer {
   width: 100%;
+  padding: 1em;
   padding-bottom: 10vh;
-  background: #ededed;
-  margin: 0 1em; }
+  z-index: 1; }
   .footer .footer-newsletter {
     padding: 0;
     margin: 0; }

@@ -1,13 +1,69 @@
+body {
+  color: #141313; }
+
 .identity-crisis {
-  min-height: 100vh;
-  padding: 0 1em; }
+  margin-top: 50px;
+  min-height: 90vh;
+  width: 100%;
+  z-index: 9999;
+  display: flex;
+  justify-content: flex-start;
+  vertical-align: bottom;
+  flex-wrap: wrap; }
   .identity-crisis .identity-crisis-inner {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
+    max-height: 90%;
+    overflow-y: scroll;
+    padding: 1em;
+    width: 550px;
+    max-width: 90vw; }
+    .identity-crisis .identity-crisis-inner p {
+      text-indent: 5vw;
+      font-size: 1.5em;
+      letter-spacing: -.5px;
+      line-height: 120%;
+      font-size: 1.5em; }
+      @media only screen and (max-width: 800px) {
+        .identity-crisis .identity-crisis-inner p {
+          font-size: 1.25em;
+          line-height: 130%; } }
+  .identity-crisis .index {
+    max-height: calc(90vh - 100px);
+    overflow-y: scroll;
+    width: 290px;
+    max-width: 90vw; }
+    .identity-crisis .index a {
+      display: inline-block;
+      width: 100%;
+      padding: 1em 0;
+      border-bottom: #141313 1px solid;
+      letter-spacing: -.2px;
+      font-size: 18px;
+      line-height: 120%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .identity-crisis .index a:hover {
+      color: #74B08B;
+      border-bottom: 1px solid #141313; }
+  .identity-crisis h5 {
+    font-weight: normal;
+    text-transform: uppercase; }
+  .identity-crisis .whereiam {
+    display: flex; }
+    .identity-crisis .whereiam h5 {
+      font-weight: normal;
+      padding: 0 .25em;
+      margin: 0; }
+    .identity-crisis .whereiam .divider {
+      display: inline-block;
+      margin-right: 1em; }
+    .identity-crisis .whereiam a {
+      display: block;
+      padding: .25em;
+      margin: .25em 0;
+      letter-spacing: -.25px; }
+    .identity-crisis .whereiam a:hover {
+      opacity: 1; }
 
 .main {
   display: flex;
@@ -15,6 +71,13 @@
   @media only screen and (max-width: 800px) {
     .main {
       flex-wrap: wrap; } }
+
+.navigation {
+  background: none;
+  color: #5fbe99;
+  mix-blend-mode: exclusion; }
+  .navigation a {
+    color: #dd8cbd; }
 
 .intro:hover a:not(:hover) {
   opacity: 0.5; }
@@ -31,10 +94,11 @@
       max-width: 100%; } }
 
 .photo {
-  position: absolute;
-  z-index: 0;
+  background: #d990be;
+  position: fixed;
   width: 100vw;
-  height: 500px;
+  height: 100vh;
+  z-index: -1;
   overflow-x: hidden;
   background-size: cover;
   background-repeat: no-repeat;
@@ -69,7 +133,8 @@
     width: auto;
     margin: 1em auto;
     margin-bottom: 7.5vh;
-    filter: grayscale(0); }
+    filter: grayscale(100);
+    mix-blend-mode: darken; }
     .stuff ._project p {
       font-size: 18px;
       letter-spacing: -.5px; }
@@ -80,7 +145,7 @@
       margin: 0 auto; }
   .stuff ._project:hover {
     cursor: pointer;
-    filter: grayscale(1); }
+    mix-blend-mode: overlay; }
   @media only screen and (min-width: 800px) {
     .stuff #kumu {
       max-width: 600px; }
@@ -104,11 +169,10 @@
       margin-left: auto; } }
 
 .stuff-text a {
-  opacity: 0.7;
   display: inline-block;
   width: 48%;
   padding: 1em 0;
-  border-bottom: #acacac 1px solid;
+  border-bottom: #141313 1px solid;
   letter-spacing: -.2px;
   font-size: 18px;
   line-height: 120%;
@@ -117,8 +181,8 @@
   text-overflow: ellipsis; }
 
 .stuff-text a:hover {
-  opacity: 1;
-  border-bottom: #141313 1px solid; }
+  color: #74B08B;
+  border-bottom: #74B08B 1px solid; }
 
 @media only screen and (max-width: 800px) {
   .stuff-text a {

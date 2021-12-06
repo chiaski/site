@@ -18,7 +18,7 @@
 
 
 // colors
-$bg: #ededed;
+$bg: #dce3dc;
 $text: #141313;
 
 $b: #141313;
@@ -156,7 +156,6 @@ img.img-half {
   padding: 0;
   margin: 0 auto;
   width: 100%;
-  background: $bg;
 
   .container-wrapper {
     max-width: 1400px;
@@ -295,7 +294,6 @@ img.img-half {
 
 
 .main {
-  background: $bg;
   padding: 1em;
   padding-top: 100px;
   display: flex;
@@ -329,9 +327,9 @@ img.img-half {
 .footer {
 
   width: 100%;
+  padding: 1em;
   padding-bottom: 10vh;
-  background: $bg;
-  margin: 0 1em;
+  z-index: 1;
 
 
   .footer-newsletter {

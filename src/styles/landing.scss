@@ -1,23 +1,114 @@
 // colors
-$bg: #ededed;
+$bg: #dce3dc;
 $text: #141313;
 
 $b: #141313;
 $g: #acacac; // gray
+$a: #74B08B; // accent
+$p: #d990be; // pink
+
+body {
+  color: #141313;
+}
 
 // crisis
 .identity-crisis {
-  min-height: 100vh;
-  padding: 0 1em;
+
+  margin-top: 50px;
+  min-height: 90vh;
+  width: 100%;
+  z-index: 9999;
+  display: flex;
+  justify-content: flex-start;
+  vertical-align: bottom;
+  flex-wrap: wrap;
 
   .identity-crisis-inner {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+
+    max-height: 90%;
+    overflow-y: scroll;
+    padding: 1em;
+    width: 550px;
+    max-width: 90vw;
+
+    p {
+      text-indent: 5vw;
+      font-size: 1.5em;
+      letter-spacing: -.5px;
+      line-height: 120%;
+      font-size: 1.5em;
+
+      @media only screen and (max-width: 800px) {
+        font-size: 1.25em;
+        line-height: 130%;
+      }
+
+    }
+
+
   }
+
+  .index {
+    //    background: red;
+
+    max-height: calc(90vh - 100px);
+    overflow-y: scroll;
+
+    width: 290px;
+    max-width: 90vw;
+
+    a {
+      display: inline-block;
+      width: 100%;
+      padding: 1em 0;
+      border-bottom: $b 1px solid;
+      letter-spacing: -.2px;
+      font-size: 18px;
+      line-height: 120%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    a:hover {
+      color: $a;
+      border-bottom: 1px solid $b;
+    }
+  }
+
+  h5 {
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+  .whereiam {
+
+    display: flex;
+
+    h5 {
+      font-weight: normal;
+      padding: 0 .25em;
+      margin: 0;
+    }
+
+    .divider {
+      display: inline-block;
+      margin-right: 1em;
+    }
+
+    a {
+      display: block;
+      padding: .25em;
+      margin: .25em 0;
+      letter-spacing: -.25px;
+    }
+
+    a:hover {
+      opacity: 1;
+    }
+
+  }
+
 
 }
 
@@ -31,6 +122,17 @@ $g: #acacac; // gray
 
   @media only screen and (max-width: 800px) {
     flex-wrap: wrap;
+  }
+}
+
+.navigation {
+
+  background: none;
+  color: #5fbe99;
+  mix-blend-mode: exclusion;
+
+  a {
+    color: #dd8cbd;
   }
 }
 
@@ -59,10 +161,11 @@ $g: #acacac; // gray
 // decorative
 
 .photo {
-  position: absolute;
-  z-index: 0;
+  background: $p;
+  position: fixed;
   width: 100vw;
-  height: 500px;
+  height: 100vh;
+  z-index: -1;
   overflow-x: hidden;
   background-size: cover;
   background-repeat: no-repeat;
@@ -113,7 +216,8 @@ $g: #acacac; // gray
     width: auto;
     margin: 1em auto;
     margin-bottom: 7.5vh;
-    filter: grayscale(0);
+    filter: grayscale(100);
+    mix-blend-mode: darken;
 
     p {
       font-size: 18px;
@@ -135,7 +239,7 @@ $g: #acacac; // gray
 
   ._project:hover {
     cursor: pointer;
-    filter: grayscale(1);
+    mix-blend-mode: overlay;
   }
 
 
@@ -185,11 +289,10 @@ $g: #acacac; // gray
 .stuff-text {
 
   a {
-    opacity: 0.7;
     display: inline-block;
     width: 48%;
     padding: 1em 0;
-    border-bottom: $g 1px solid;
+    border-bottom: $b 1px solid;
     letter-spacing: -.2px;
     font-size: 18px;
     line-height: 120%;
@@ -199,8 +302,8 @@ $g: #acacac; // gray
   }
 
   a:hover {
-    opacity: 1;
-    border-bottom: $b 1px solid;
+    color: $a;
+    border-bottom: $a 1px solid;
   }
 
   @media only screen and (max-width: 800px) {
