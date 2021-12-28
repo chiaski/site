@@ -1,0 +1,72 @@
+// colors
+
+
+// stuff
+body {}
+
+// nav
+#navigation {}
+
+
+// main
+
+main {
+  padding: 2em;
+
+  @media only screen and (max-width: 600px) {
+    padding: .5em;
+  }
+}
+
+.intro {
+
+  margin: 0 auto;
+  width: 90%;
+  max-width: 650px;
+
+  p {
+    text-indent: 60px;
+  }
+
+}
+
+p a {
+  display: inline !important;
+}
+
+hr {
+  margin: 2em auto;
+}
+
+
+h3 {
+  font-weight: normal;
+  font-size: 1.5em;
+  letter-spacing: -.5px;
+  margin-bottom: .5em;
+}
+
+
+// quirky
+
+section#talks a,
+section#experiments a,
+section#writing a {
+  display: block;
+  padding: .15em 0;
+}
+
+#socials a {}
+
+#bucketlist {
+
+  input {
+    pointer-events: none;
+  }
+
+  label {
+    font-size: 16px;
+    letter-spacing: -.1px;
+  }
+
+}

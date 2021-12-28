@@ -1,0 +1,38 @@
+main {
+  padding: 2em; }
+  @media only screen and (max-width: 600px) {
+    main {
+      padding: .5em; } }
+
+.intro {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 650px; }
+  .intro p {
+    text-indent: 60px; }
+
+p a {
+  display: inline !important; }
+
+hr {
+  margin: 2em auto; }
+
+h3 {
+  font-weight: normal;
+  font-size: 1.5em;
+  letter-spacing: -.5px;
+  margin-bottom: .5em; }
+
+section#talks a,
+section#experiments a,
+section#writing a {
+  display: block;
+  padding: .15em 0; }
+
+#bucketlist input {
+  pointer-events: none; }
+
+#bucketlist label {
+  font-size: 16px;
+  letter-spacing: -.1px; }
+
