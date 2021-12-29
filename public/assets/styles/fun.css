@@ -1,14 +1,19 @@
 nav {
   position: fixed;
   padding: 1em 2em; }
+  nav section._name {
+    margin: .5em 0; }
   nav a {
     text-decoration: none; }
   nav a h1 {
-    margin: .5em 0;
+    margin: 0;
     font-weight: normal;
     font-size: 24px;
     letter-spacing: -.5px;
     color: black; }
+  nav select {
+    padding: .5em;
+    font-size: 16px; }
 
 main {
   padding: 2em; }
