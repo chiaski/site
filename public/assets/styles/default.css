@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
-  font-family: Times, serif; }
+  font-family: Times, serif;
+  scroll-margin-top: 15vh; }
 
 body {
   margin: 0;
@@ -23,9 +24,16 @@ p {
 
 input,
 button {
-  padding: .5em; }
+  padding: .5em;
+  margin: .25em auto;
+  margin-right: .25em;
+  font-size: 16px; }
 
 input:hover,
 button:hover {
   cursor: pointer; }
+
+.emoji {
+  font-size: 80%;
+  line-height: 100%; }
 

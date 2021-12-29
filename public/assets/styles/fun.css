@@ -1,3 +1,15 @@
+nav {
+  position: fixed;
+  padding: 1em 2em; }
+  nav a {
+    text-decoration: none; }
+  nav a h1 {
+    margin: .5em 0;
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: -.5px;
+    color: black; }
+
 main {
   padding: 2em; }
   @media only screen and (max-width: 600px) {
@@ -9,7 +21,10 @@ main {
   width: 90%;
   max-width: 650px; }
   .intro p {
-    text-indent: 60px; }
+    text-indent: 4vw; }
+    @media only screen and (max-width: 600px) {
+      .intro p {
+        text-indent: 40px; } }
 
 p a {
   display: inline !important; }

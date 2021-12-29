@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: Times, serif;
+  scroll-margin-top: 15vh;
 }
 
 body {
@@ -34,10 +35,23 @@ p {
 input,
 button {
   padding: .5em;
+  margin: .25em auto;
+  margin-right: .25em;
+  font-size: 16px;
+
+  @media only screen and (max-width: 600px) {}
+
 }
 
 
 input:hover,
 button:hover {
   cursor: pointer;
+}
+
+
+// emojis have to be tinier or they fuck up the line-height.
+.emoji {
+  font-size: 80%;
+  line-height: 100%;
 }

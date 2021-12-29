@@ -5,7 +5,25 @@
 body {}
 
 // nav
-#navigation {}
+nav {
+
+  position: fixed;
+  padding: 1em 2em;
+
+  a {
+    text-decoration: none;
+  }
+
+  a h1 {
+    margin: .5em 0;
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: -.5px;
+
+    color: black;
+  }
+
+}
 
 
 // main
@@ -25,7 +43,13 @@ main {
   max-width: 650px;
 
   p {
-    text-indent: 60px;
+    text-indent: 4vw;
+
+
+    @media only screen and (max-width: 600px) {
+      text-indent: 40px;
+    }
+
   }
 
 }
