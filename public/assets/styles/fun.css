@@ -38,6 +38,11 @@ h3 {
   letter-spacing: -.5px;
   margin-bottom: .5em; }
 
+h4 {
+  font-weight: normal;
+  font-size: 1.25em;
+  letter-spacing: -.25px; }
+
 section#talks a,
 section#experiments a,
 section#writing a {
