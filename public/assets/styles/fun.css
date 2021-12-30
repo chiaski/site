@@ -1,10 +1,15 @@
 nav {
+  background: linear-gradient(#fff, #fff 50%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
+  width: 100%;
   position: fixed;
   padding: 1em 2em; }
   nav section._name {
     margin: .5em 0; }
+  nav section._jump {
+    margin-top: .5em; }
   nav a {
-    text-decoration: none; }
+    text-decoration: none;
+    display: inline-block; }
   nav a h1 {
     margin: 0;
     font-weight: normal;
@@ -14,6 +19,10 @@ nav {
   nav select {
     padding: .5em;
     font-size: 16px; }
+  @media only screen and (max-width: 600px) {
+    nav {
+      display: flex;
+      justify-content: space-between; } }
 
 main {
   padding: 2em; }
@@ -39,7 +48,7 @@ hr {
 
 h3 {
   font-weight: normal;
-  font-size: 1.5em;
+  font-size: 1.75em;
   letter-spacing: -.5px;
   margin-bottom: .5em; }
 
@@ -53,6 +62,13 @@ section#experiments a,
 section#writing a {
   display: block;
   padding: .15em 0; }
+
+.links a sup {
+  display: inline-block;
+  color: #000;
+  text-decoration-color: #fff;
+  line-height: 80%;
+  letter-spacing: -.25px; }
 
 #bucketlist input {
   pointer-events: none; }

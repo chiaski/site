@@ -1,5 +1,5 @@
 // colors
-
+$bg: #fff;
 
 // stuff
 body {}
@@ -7,6 +7,8 @@ body {}
 // nav
 nav {
 
+  background: linear-gradient(#fff, #fff 50%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
+  width: 100%;
   position: fixed;
   padding: 1em 2em;
 
@@ -14,8 +16,13 @@ nav {
     margin: .5em 0;
   }
 
+  section._jump {
+    margin-top: .5em;
+  }
+
   a {
     text-decoration: none;
+    display: inline-block;
   }
 
   a h1 {
@@ -30,6 +37,11 @@ nav {
   select {
     padding: .5em;
     font-size: 16px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    display: flex;
+    justify-content: space-between;
   }
 
 }
@@ -74,7 +86,7 @@ hr {
 
 h3 {
   font-weight: normal;
-  font-size: 1.5em;
+  font-size: 1.75em;
   letter-spacing: -.5px;
   margin-bottom: .5em;
 }
@@ -93,6 +105,25 @@ section#experiments a,
 section#writing a {
   display: block;
   padding: .15em 0;
+}
+
+section p {
+  //  max-width: 480px;
+}
+
+.links {
+
+
+
+  a sup {
+    display: inline-block;
+    color: #000;
+    text-decoration-color: #fff;
+    line-height: 80%;
+    letter-spacing: -.25px;
+    ;
+  }
+
 }
 
 #socials a {}
