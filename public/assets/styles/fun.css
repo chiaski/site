@@ -33,7 +33,7 @@ main {
 .intro {
   margin: 0 auto;
   width: 90%;
-  max-width: 650px; }
+  max-width: 750px; }
   .intro p {
     text-indent: 4vw; }
     @media only screen and (max-width: 600px) {
