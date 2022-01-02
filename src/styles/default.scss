@@ -65,9 +65,13 @@ button:hover {
   .col {
     width: 33%;
 
+    ul {
+      margin: 0;
+    }
 
     @media only screen and (max-width: 600px) {
       width: 100%;
+      margin: 0;
     }
 
   }

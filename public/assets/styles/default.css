@@ -43,7 +43,10 @@ button:hover {
   justify-content: space-between; }
   .three-col .col {
     width: 33%; }
+    .three-col .col ul {
+      margin: 0; }
     @media only screen and (max-width: 600px) {
       .three-col .col {
-        width: 100%; } }
+        width: 100%;
+        margin: 0; } }
 
