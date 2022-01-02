@@ -55,3 +55,22 @@ button:hover {
   font-size: 80%;
   line-height: 100%;
 }
+
+.three-col {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .col {
+    width: 33%;
+
+
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+    }
+
+  }
+
+
+}
