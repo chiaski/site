@@ -101,6 +101,10 @@ h4 {
 
 // quirky
 
+section#now p{
+  text-indent: 0;
+}
+
 section#talks a,
 section#experiments a,
 section#writing a {
@@ -151,7 +155,7 @@ section#experiments{
 section#experiments .experiments-filter{
   position: sticky;
   top: 0;
-  padding: .5em;
+  padding: 1em 0;
   
   button{
     font-size: .8rem;

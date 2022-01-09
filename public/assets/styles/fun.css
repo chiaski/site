@@ -57,6 +57,9 @@ h4 {
   font-size: 1.25em;
   letter-spacing: -.25px; }
 
+section#now p {
+  text-indent: 0; }
+
 section#talks a,
 section#experiments a,
 section#writing a {
@@ -83,7 +86,7 @@ section#experiments {
 section#experiments .experiments-filter {
   position: sticky;
   top: 0;
-  padding: .5em; }
+  padding: 1em 0; }
   section#experiments .experiments-filter button {
     font-size: .8rem; }
 

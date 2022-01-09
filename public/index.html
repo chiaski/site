@@ -71,6 +71,7 @@
         <section class="_jump">
           <select name="nav" onchange="location = this.value;">
             <option value="#intro">about</option>
+            <option value="#now">/now</option>
             <option value="">music</option>
             <option value="#writing">writing</option>
             <option value="#experiments">experiments</option>
@@ -87,7 +88,7 @@
 
         <div class="intro">
           <center><img src="assets/images/me6.gif" alt="skribble of chia" title="me"></center>
-          <p>Chia <sup>(b. 2000, <a href="https://en.wikipedia.org/wiki/Tondo,_Manila" target="_blank">tondo</a>)</sup> is an internet artist + writer + product designer in radical pursuit of the web, words, & worlding by the systems that shape them. Based in New Haven and studying CS & Art at Yale, by way of Manila. Previously, they've coded & designed at <a href="https://spotify.design" title="Design Platform team" target="_blank">Spotify</a>, <a href="https://kumu.ph" title="The Philippine's #1 social app">Kumu</a>, <a href="https://rappler.com" target="_blank">Rappler</a>, for <a href="https://en.wikipedia.org/wiki/National_Democratic_Mass_Organization" target="_blank">NDMOs</a>, literary publications, and many other startups & communities. Incoming Product Designer at <a href="https://figma.com">Figma</a>.</p>
+          <p>Chia <sup>(b. 2000, <a href="https://en.wikipedia.org/wiki/Tondo,_Manila" target="_blank">tondo</a>)</sup> is an internet artist  in radical pursuit of the web, words, & worlding by the systems that shape them. Based in New Haven and studying CS & Art at Yale, by way of Manila. Previously, they've coded & designed at <a href="https://spotify.design" title="Design Platform team" target="_blank">Spotify</a>, <a href="https://kumu.ph" title="The Philippine's #1 social app">Kumu</a>, <a href="https://rappler.com" target="_blank">Rappler</a>, for <a href="https://en.wikipedia.org/wiki/National_Democratic_Mass_Organization" target="_blank">NDMOs</a>, literary publications, and many other startups & communities. Incoming Product Designer at <a href="https://figma.com">Figma</a>.</p>
 
           <p>
             Now focusing on making, music, and community building. Nurturing Filipino technologists at <a href="https://develo.ph/discord">Developh</a>, leading <a href="https://designatyale.com" target="_blank">Design at Yale & Friends of Figma at Yale</a>, crafting an artsy browser-based game maker, and launching <a href="https://tinyletter.com/bad" target=" _blank"> an experimental press/label/whatever</a> out of my studio apartment. Also writing a book (mostly a compilation with some new pieces).</p>
@@ -168,6 +169,20 @@
 
           <hr>
 
+          <section id="now">
+            <h3>/Now</h3>
+            <p>In New Haven, Connecticut.</p>
+            <p>Seeking work in music before I start my full-time job in August 2022.</p>
+            <p>Launching <a href="https://tinyletter.com/bad">Bad Internet</a>, a music blog. The usual criticism is nice, but I'm moved by the challenge of <a href="https://www.are.na/chia/musical-ekphrasis" target="_blank">musical ekphrasis</a> (especially by people you care about) and <a href="https://www.are.na/chia/comments-left-on-music">emotion spurred</a> by music. I'm excited about leading an interview series highlighting visual + live art/designers that work closely with musicians.</p>
+            <p>Working on maybe, </p>
+            <p>Writing and designing a collection of essays. Producing artists' books and zines. (You can pick some of these up here!)</p>
+            <p>In the long-term, my biggest dream is evolving <a href="https://discord.gg/developh">Developh</a> into a nonprofit physical community space, school, and press in Manila  exploring the intersections of tech, design, and the arts.</p>
+            
+          </section>
+          
+          
+          <hr>
+          
           <section id="writing">
             <h3>Writing</h3>
             <p>You can find most of these on <a href="https://chias.blog" target="_blank">chias.blog</a>. Mostly diary entries.</p>
@@ -184,11 +199,12 @@
             <div class="experiments-filter">
               Filter: 
               <button class="_f" onclick="exp('all')"> All</button>
-              <button class="_f" onclick="exp('writing')">Writing</button>
+              <button class="_f" onclick="exp('writing')">Writing/Talks</button>
               <button class="_f" onclick="exp('netart')">Net Art</button>
-              <button class="_f">Community</button>
-              <button class="_f">Graphic Design</button>
-              <button class="_f">Art</button>
+              <button class="_f"  onclick="exp('community')">Community</button>
+              <button class="_f" onclick="exp('design')">Design</button>
+              <button class="_f" onclick="exp('art')">Art/Print</button>
+              <button class="_f" onclick="exp('misc')">Misc.</button>
             </div>
 
 
@@ -198,7 +214,10 @@
                 
                 <a href="https://chias.blog/2022/theophany" target="_blank" data-tag="writing">Theophany, a ~45min read and love letter to creation. <sup>Writing</sup></a>
 
-                <a href="realdiary" target="_blank" data-tag="netart">A Real Diary, me my pen & my neural net. <sup>Writing (?)</sup></a>
+                <a href="realdiary" target="_blank" data-tag="netart">A Real Diary, me my pen & my neural net. <sup>Net Art + Writing (?)</sup></a>
+                
+                
+                <a href="https://www.instagram.com/p/CYNEdfjFnWN/" target="_blank" rel="noreferrer" data-tag="design">Fan posters for Spellling, Hana Vu, & thanks for coming. <sup>Graphic Design</sup></a>
 
                 
                 <h4>2021</h4>
@@ -212,90 +231,106 @@
                   <sup>Writing (Tech)</sup>
                 </a>
 
-                <a href="https://open.spotify.com/playlist/1yTrWv43U4kmkdZoAxBMCU?si=ea2819bd616f4da8" target="_blank" rel="noreferrer" data-tag="music">Favorite 2021 releases.
+                <a href="https://open.spotify.com/playlist/1yTrWv43U4kmkdZoAxBMCU?si=ea2819bd616f4da8" target="_blank" rel="noreferrer" data-tag="misc">Favorite 2021 releases.
                   <sup>Music (Curation)</sup>
                 </a>
-
-                <a href="https://chias.blog/2021/for/" target="_blank" data-tag="print">All the funerals for my past selves
+                
+                <a href="https://open.spotify.com/playlist/4gGzL9yw285Egy9EwQs9w7?si=bf4bf9caa17d4b62" target="_blank" rel="noreferrer" data-tag="misc">10,000 songs to shuffle.
+                  <sup>Music (Curation)</sup>
+                </a>
+                
+                <a href="https://chias.blog/2021/for/" target="_blank" data-tag="art">All the funerals for my past selves
                   <sup>Zine</sup></a>
 
-                <a href="https://chias.blog/2021/for/" target="_blank" data-tag="fun">if i fall into a very dense cloud, can i die?
+                <a href="https://chias.blog/2021/for/" target="_blank" data-tag="misc">if i fall into a very dense cloud, can i die?
                   <sup>Comic</sup></a>
 
-                <a href="https://chias.blog/2021/for/" target="_blank" data-tag="fun">In threes.
+                <a href="https://chias.blog/2021/for/" target="_blank" data-tag="misc">In threes.
                   <sup>Microsite</sup></a>
 
-                <a href="https://chias.blog/2021/the-saddest-designer/">The saddest designer.
+                <a href="https://chias.blog/2021/the-saddest-designer/" data-tag="writing">The saddest designer.
                   <sup>Writing</sup></a>
 
 
-                <a href="https://chias.blog/2021/in-defense-of-disorder-on-career-creativity-and-professionalism/" rel="noreferrer" target="_blank">In defense of disorder.
-                  <sup>Writing</sup></a>
+                <a href="https://chias.blog/2021/web-in-decay/" data-tag="writing" rel="noreferrer" target="_blank">The web in decay is the web by design.
+                  <sup>Writing (Tech)</sup></a>
+                
+                <a href="https://chias.blog/2021/in-defense-of-disorder-on-career-creativity-and-professionalism/" data-tag="writing" rel="noreferrer" target="_blank">In defense of disorder.
+                  <sup>Writing (Career/Practice)</sup></a>
 
-                <a href="https://chias.blog/2021/talk-worlding-a-new-philippines/" target="_blank">Worlding a New Philippines.
+                <a href="https://chias.blog/2021/talk-worlding-a-new-philippines/" data-tag="writing" target="_blank">Worlding a New Philippines.
                   <sup>Talk</sup></a>
 
-                <a href="https://twitter.com/hotemogf/status/1443058881358438401" target="_blank">On content moderation. <sup>Graphic Design</sup></a>
+                <a href="https://twitter.com/hotemogf/status/1443058881358438401" target="_blank" data-tag="design">On content moderation. <sup>Graphic Design</sup></a>
 
-                <a href="https://processingfoundation.org/" target="_blank">Fellow at the Processing Foundation.
+                <a href="https://processingfoundation.org/" target="_blank" data-tag="community">Fellow at the Processing Foundation.
                   <sup>Fellowship</sup>
                 </a>
 
-                <a href="https://chias.blog/2021/csh-cuts/">Car Seat Headrest deep cuts, a ~4gb compilation.
+                <a href="https://chias.blog/2021/csh-cuts/" target="_blank" rel="noreferrer" data-tag="misc">Car Seat Headrest deep cuts, a ~4gb compilation.
                   <sup>Music (Curation)</sup></a>
 
-                <a href="https://chia.design/fantasy" target="_blank">Design is Fantasy, for UX+ 2021.
+                <a href="https://chia.design/fantasy" target="_blank" data-tag="writing">Design is Fantasy, for UX+ 2021.
                   <sup>Talk</sup></a>
 
 
-                <a href="https://chia.codes/projects/extension/" target="_blank" rel="noreferrer">Proximities.
+                <a href="https://chia.codes/projects/extension/" target="_blank" rel="noreferrer"  data-tag="netart">Proximities, three extensions considering the web's spatiality.
                   <sup>Chrome Extension</sup>
                 </a>
 
 
-                <a href="https://khaenriah.com" rel="noreferrer" target="_blank">Khaenri'ah Lore Project, Genshin Impact's largest lore community.
+                <a href="https://khaenriah.com" rel="noreferrer" target="_blank"  data-tag="community">Khaenri'ah Lore Project, Genshin Impact's largest lore community.
                   <sup>Community</sup>
                 </a>
 
 
-                <a href="https://chia.design/punishing" rel="noreferrer" target="_blank">The Punishing of the Philippines.
+                <a href="https://chia.design/punishing" rel="noreferrer"  data-tag="writing" target="_blank">The Punishing of the Philippines.
                   <sup>Writing + Web</sup>
                 </a>
 
-                <a href="https://twitter.com/khaenriahcom/status/1422671877617504260" rel="noreferrer" target="_blank">Khaenri'ah Times, for KLP.
+                <a href="https://twitter.com/khaenriahcom/status/1422671877617504260" data-tag="design" rel="noreferrer" target="_blank">Khaenri'ah Times, for KLP.
                   <sup>Campaign + Design</sup>
                 </a>
 
-                <a href="https://chia-arena-workshop.glitch.me/">Comments left on music simulator.
+                <a href="https://chia-arena-workshop.glitch.me/"  data-tag="netart" target="_blank" rel="noreferrer">Comments left on music simulator.
                   <sup>Web Experience</sup>
                 </a>
 
-                <a href="https://chi.itch.io/bisita" rel="noreferrer" target="_blank">Bisita, a recollection of the Seven Churches Visitation.
+                <a href="https://chi.itch.io/bisita" rel="noreferrer" target="_blank"  data-tag="netart">Bisita, a recollection of the Seven Churches Visitation.
                   <sup>Game</sup>
                 </a>
 
 
-                <a href="https://chia.codes/exercises/WORLD.html" rel="noreferrer" target="_blank">A website is a world.
+                <a href="https://chia.codes/projects/apocalypse/" rel="noreferrer" target="_blank"  data-tag="netart">A multiplayer incremental game.<sup>Game</sup></a>
+                
+            <a href="https://www.qbo.com.ph/" rel="noreferrer" target="_blank" data-tag="community">Community advocate at QBO.</a>
+
+
+                <a href="https://chia.codes/exercises/WORLD.html" rel="noreferrer" target="_blank"  data-tag="netart">A website is a world.
                   <sup>Microsite + Writing</sup>
                 </a>
 
 
-                <a href="https://docs.google.com/document/d/1a6Uw5Mh13pGVELiGWk_bAVLAc74wII0yAYMODuoI8kA/edit#" rel="noreferrer" target="_blank">Pyro Is Not Passion (Genshin Impact).
+                <a href="https://docs.google.com/document/d/1a6Uw5Mh13pGVELiGWk_bAVLAc74wII0yAYMODuoI8kA/edit#" rel="noreferrer" target="_blank"  data-tag="writing">Pyro Is Not Passion (Genshin Impact).
                   <sup>Extensive Anime Essay</sup>
                 </a>
 
 
-                <a href="https://chias.blog/2021/observance/" target="_blank" rel="noreferrer">
+                <a href="https://chias.blog/2021/observance/" target="_blank"  data-tag="writing" rel="noreferrer">
                   Observance.
                   <sup>Poetry</sup>
                 </a>
 
-                <a href="https://kurtkolev.com" rel="noreferrer" target="_blank">Website for a friend's album.
+                <a href="https://kurtkolev.com" rel="noreferrer" target="_blank"  data-tag="design">Website for a friend's album.
                   <sup>Web</sup>
                 </a>
-
-
-                <a href="https://chia.codes/projects/apocalypse/" rel="noreferrer" target="_blank">A multiplayer incremental game.<sup>Game</sup></a>
+                
+                <a href="https://chias.blog/2021/for-homura-a-character-analysis/" rel="noreferrer" target="_blank"  data-tag="writing">Homura Akemi Character Analysis (Pt 1).
+                  <sup>Extensive Anime Essay</sup>
+                </a>
+                
+                
+                
 
 
               </div>
@@ -308,7 +343,12 @@
             </div>
 
 
-            <a href="https://www.qbo.com.ph/" rel="noreferrer" target="_blank">Community advocate at QBO.</a>
+            <a href="http://noob.systems" rel="noreferrer" target="_blank" data-tag="netart">Two-way surveillance. <sup>Sound + Net Art</sup></a>
+
+            <a href="https://develo.ph/phtech" rel="noreferrer" target="_blank" data-tag="netart">Resources for Filipino students exploring tech. <sup>Guide</sup></a>
+            
+            <a href="https://chi.itch.io/house" rel="noreferrer" target="_blank">A universe in sound, after Orteil's Nested. <sup>Sound + Net Art</sup></a>
+
 
             <a href="https://startu.ph" rel="noreferrer" target="_blank">Investing in Filipino students.</a>
 
@@ -322,11 +362,8 @@
 
             <a href="http://bit.ly/wohdearstudent" rel="noreferrer" target="_blank">A week-in-the-life of students during the pandemic.</a>
 
-            <a href="https://develo.ph/phtech" rel="noreferrer" target="_blank">Resources for Filipino students exploring tech.</a>
 
             <a href="https://medium.com/@chiaski/a-state-some-motorcycles-and-a-startup-7d1dd0a92b82" target="_blank">A state, some motorcycles, and a startup.</a>
-
-            <a href="http://noob.systems" rel="noreferrer" target="_blank">Two-way surveillance.</a>
 
             <a href="https://worksofhe.art/stories/collaborate/">The radical need to collaborate.</a>
 
@@ -339,8 +376,6 @@
             <a href="https://chiaski.github.io/politic-hopefuls/">Presidential Hopefuls </a>
 
             <a href="https://twitter.com/hotemogf/status/1323287346045984768" rel="noreferrer" target="_blank">A radio show about GPA dropping. (Fall 2020)</a>
-
-            <a href="https://house.chiaski.com/" rel="noreferrer" target="_blank">A universe in sound, after Orteil's Nested.</a>
 
             <a href="sophomore/index.html" rel="noreferrer" target="_blank">My Sophomore Review.</a>
 
