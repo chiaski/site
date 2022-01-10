@@ -1,13 +1,29 @@
+//
+//@font-face {
+//    font-family: 'Tobias';
+//    src: url('https://chia.design/fonts/Tobias-Regular.woff2') format('woff2'),
+//        url('https://chia.design/fonts/Tobias-Regular.woff') format('woff');
+//    font-weight: normal;
+//    font-style: normal;
+//    font-display: swap;
+//}
+
+
+
+// stuff
+body {
+  font-weight: normal;
+}
+
+
 * {
   box-sizing: border-box;
-  font-family: Times, serif;
   scroll-margin-top: 15vh;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: Times, serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
