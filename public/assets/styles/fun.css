@@ -1,4 +1,5 @@
 nav {
+  text-align: center;
   background: linear-gradient(#fff, #fff 50%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
   width: 100%;
   position: fixed;
@@ -25,7 +26,8 @@ nav {
       justify-content: space-between; } }
 
 main {
-  padding: 2em; }
+  padding: 2em;
+  padding-top: 5em; }
   @media only screen and (max-width: 600px) {
     main {
       padding: .5em; } }
