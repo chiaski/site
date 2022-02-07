@@ -9,6 +9,7 @@ nav {
   background: linear-gradient(#fff, #fff 50%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
   width: 100%;
   position: fixed;
+  z-index:999;
   padding: 1em 2em;
 
   section._name {
@@ -39,8 +40,7 @@ nav {
   }
 
   @media only screen and (max-width: 600px) {
-    display: flex;
-    justify-content: space-between;
+    
   }
 
 }
@@ -98,6 +98,33 @@ h4 {
 }
 
 
+// clouds
+#cloud{
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  pointer-events: none;
+  
+  img{
+    position: absolute;
+    max-width: 33vw;
+    padding: 1em;
+    pointer-events: all;
+  }
+  
+  @media only screen and (max-width: 600px) {
+  display: none;
+  }
+  
+}
+
+#cloud:hover{
+  opacity: 0.4;
+}
+
 
 // quirky
 
@@ -146,19 +173,37 @@ section p {
 
 }
 
+
+section#newsletter, section#support, section#writing, section#experiments{
+  
+  p{
+  text-indent: 0;
+  }
+}
 // experiments filter
+
 
 section#experiments{
   position: relative;
+  
 }
 
 section#experiments .experiments-filter{
-  position: sticky;
   top: 0;
   padding: 1em 0;
+  
   
   button{
     font-size: .8rem;
   }
   
+}
+
+// EMAIL
+
+a.big{
+  font-size: 4em;
+  text-decoration: none;
+  letter-spacing: -2px;
+  text-align: center;
 }

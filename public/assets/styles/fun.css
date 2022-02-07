@@ -3,6 +3,7 @@ nav {
   background: linear-gradient(#fff, #fff 50%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
   width: 100%;
   position: fixed;
+  z-index: 999;
   padding: 1em 2em; }
   nav section._name {
     margin: .5em 0; }
@@ -20,10 +21,6 @@ nav {
   nav select {
     padding: .5em;
     font-size: 16px; }
-  @media only screen and (max-width: 600px) {
-    nav {
-      display: flex;
-      justify-content: space-between; } }
 
 main {
   padding: 2em;
@@ -59,6 +56,26 @@ h4 {
   font-size: 1.25em;
   letter-spacing: -.25px; }
 
+#cloud {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  pointer-events: none; }
+  #cloud img {
+    position: absolute;
+    max-width: 33vw;
+    padding: 1em;
+    pointer-events: all; }
+  @media only screen and (max-width: 600px) {
+    #cloud {
+      display: none; } }
+
+#cloud:hover {
+  opacity: 0.4; }
+
 section#now p {
   text-indent: 0; }
 
@@ -82,13 +99,21 @@ section#writing a {
   font-size: 16px;
   letter-spacing: -.1px; }
 
+section#newsletter p, section#support p, section#writing p, section#experiments p {
+  text-indent: 0; }
+
 section#experiments {
   position: relative; }
 
 section#experiments .experiments-filter {
-  position: sticky;
   top: 0;
   padding: 1em 0; }
   section#experiments .experiments-filter button {
     font-size: .8rem; }
+
+a.big {
+  font-size: 4em;
+  text-decoration: none;
+  letter-spacing: -2px;
+  text-align: center; }
 
