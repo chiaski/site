@@ -18,8 +18,7 @@ module.exports = {
     'main': './src/styles/main.scss',
     'default': './src/styles/default.scss',
     'portfolio': './src/styles/portfolio.scss',
-    'landing': './src/styles/landing.scss',
-    'fun': './src/styles/fun.scss'
+    'home': './src/styles/home.scss'
   },
 
   // ['./src/scripts/main.js', './src/styles/main.scss', './src/styles/portfolio.scss'],

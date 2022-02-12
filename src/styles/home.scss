@@ -1,0 +1,206 @@
+
+$w: #cacac6;
+$b: #22231d;
+$g: #cacac6;
+
+$black: #22231d;
+
+$serif: "Times New Roman", serif;
+
+body {
+  background: $b;
+  font-family: $serif;
+  line-height: 100%;
+
+  @media only screen and (max-width: 600px) {
+    overflow: hidden;
+  }
+}
+
+
+a {
+  text-decoration: none;
+}
+
+// NO
+
+#no{
+  background: $b;
+  position: fixed;
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;vertical-align: center;
+  display: none;
+  
+  div{
+    font-size: 4em;
+    color:$w;
+    letter-spacing: -1px;
+  }
+  
+}
+
+
+// YES
+
+#landing {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .box-inner {
+    margin-top: -1em;
+  }
+
+  .___shift {
+    border: 1px solid $w;
+    border-radius: 50px;
+    padding: 0 .25em;
+//        text-shadow: 0 0 50px $w;
+  }
+
+  .___shift:hover {
+    cursor: pointer;
+  }
+
+  .___picture {
+    width: 100vw;
+    min-height: 80vh;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: linear all .5s;
+    -webkit-transition-delay: .25s;
+    transition-delay: .25s;
+  }
+
+  .box-inner {
+    display: flex;
+    align-content: center;
+    align-items: center;
+  }
+
+
+  select.__who,
+  option {
+    font-size: .9em;
+    background: none;
+    color: $w;
+    font-family: $serif;
+    letter-spacing: -1.5px;
+    border: 0;
+    line-height: 90%;
+    display: inline-block;
+
+  }
+
+  p.__who {
+    text-indent: 7.5vw;
+    font-size: 3.2em;
+    letter-spacing: -2.4px;
+    line-height: 90%;
+    color: $w;
+    margin: 0;
+    padding: 0;
+    padding-right: 1em;
+
+    a:hover {
+      cursor: pointer;
+      border-bottom: 1px solid $w;
+    }
+
+  }
+
+
+  p.___what {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    margin-top: auto;
+    margin-bottom: 0;
+    font-size: 2.8em;
+    line-height: 100%;
+    padding: .5em;
+    letter-spacing: -2px;
+    color: $w;
+    z-index: 9;
+    background: $b;
+  }
+
+  p.___what sup {
+    padding: .25em;
+    font-size: .5em;
+    letter-spacing: -.5px;
+    border: 2px solid $b;
+    border-radius: 20px;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+
+    max-height: 100vh;
+
+    .___picture {
+      min-height: 80vh;
+    }
+
+
+    p.___what {
+      font-size: 1.6rem;
+      line-height: 100%;
+      letter-spacing: -1.25px;
+    }
+
+
+    select.__who {
+      border: 0;
+    }
+
+    p.__who {
+      line-height: 90%;
+      font-size: 1.8rem;
+      padding-right: 0;
+      letter-spacing: -1.5px;
+    }
+
+  }
+
+}
+
+#stuff {
+
+  button.__open {
+    width: 100%;
+    background: $g;
+    border: 0;
+    border-bottom: .5px solid $b;
+    font-family: $serif;
+    text-align: left;
+    font-size: 1.75em;
+    letter-spacing: -.5px;
+    margin: 0;
+  }
+
+  ._stuff-wrapper {
+    padding: 1em;
+    border-bottom: .5px solid $b;
+  }
+
+  ._stuff {
+    margin: 0;
+    width: 100%;
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+    background-color: $w;
+    color: $b;
+    overflow: hidden;
+  }
+
+}

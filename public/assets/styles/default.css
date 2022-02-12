@@ -17,9 +17,22 @@ body {
   margin: 0 auto;
   width: 100%; }
   .container .container-wrapper {
-    margin: 0 auto; }
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+
+.box {
+  width: 100%; }
+  .box .box-inner {
+    padding: .5em 1em; }
+
+h1, h2, h3 {
+  margin: 0 0 .5em 0;
+  padding: 0; }
 
 p {
+  margin: 0;
   letter-spacing: -.2px;
   font-size: 18px; }
 
