@@ -1,6 +1,4 @@
 body {
-  background: #22231d;
-  font-family: "Times New Roman", serif;
   line-height: 100%; }
   @media only screen and (max-width: 600px) {
     body {
@@ -10,7 +8,6 @@ a {
   text-decoration: none; }
 
 #no {
-  background: #22231d;
   position: fixed;
   z-index: 999;
   height: 100%;
@@ -22,7 +19,6 @@ a {
   display: none; }
   #no div {
     font-size: 4em;
-    color: #cacac6;
     letter-spacing: -1px; }
 
 #landing {
@@ -32,13 +28,14 @@ a {
   flex-wrap: wrap;
   justify-content: center; }
   #landing .box-inner {
+    padding: 2em;
     margin-top: -1em; }
   #landing .___shift {
-    border: 1px solid #cacac6;
-    border-radius: 50px;
-    padding: 0 .25em; }
+    text-decoration: underline;
+    text-decoration-thickness: 2px; }
   #landing .___shift:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    color: blue; }
   #landing .___picture {
     width: 100vw;
     min-height: 80vh;
@@ -56,7 +53,6 @@ a {
   #landing option {
     font-size: .9em;
     background: none;
-    color: #cacac6;
     font-family: "Times New Roman", serif;
     letter-spacing: -1.5px;
     border: 0;
@@ -67,13 +63,12 @@ a {
     font-size: 3.2em;
     letter-spacing: -2.4px;
     line-height: 90%;
-    color: #cacac6;
     margin: 0;
     padding: 0;
     padding-right: 1em; }
     #landing p.__who a:hover {
       cursor: pointer;
-      border-bottom: 1px solid #cacac6; }
+      font-style: italic; }
   #landing p.___what {
     position: absolute;
     width: 100%;
@@ -85,14 +80,11 @@ a {
     line-height: 100%;
     padding: .5em;
     letter-spacing: -2px;
-    color: #cacac6;
-    z-index: 9;
-    background: #22231d; }
+    z-index: 9; }
   #landing p.___what sup {
     padding: .25em;
     font-size: .5em;
     letter-spacing: -.5px;
-    border: 2px solid #22231d;
     border-radius: 20px; }
   @media only screen and (max-width: 600px) {
     #landing {
@@ -113,9 +105,7 @@ a {
 
 #stuff button.__open {
   width: 100%;
-  background: #cacac6;
   border: 0;
-  border-bottom: 0.5px solid #22231d;
   font-family: "Times New Roman", serif;
   text-align: left;
   font-size: 1.75em;
@@ -123,15 +113,12 @@ a {
   margin: 0; }
 
 #stuff ._stuff-wrapper {
-  padding: 1em;
-  border-bottom: 0.5px solid #22231d; }
+  padding: 1em; }
 
 #stuff ._stuff {
   margin: 0;
   width: 100%;
   max-height: 0;
   transition: max-height 0.5s ease-out;
-  background-color: #cacac6;
-  color: #22231d;
   overflow: hidden; }
 
