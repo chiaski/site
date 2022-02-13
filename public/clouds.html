@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
+<!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
+<!--[if IE 8]><html class="preIE9"><![endif]-->
+<!--[if gte IE 9]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <meta http-equielophv="X-UA-Compatible" content="ie=edge">
+  <title>clouds</title>
+  <meta name="title" content="Chia Amisola">
+  <meta name="description" content="Chia Amisola is an internet artist.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ifyouknewmewouldyoulove.me">
+  <meta property="og:title" content="ifyouknewmewouldyoulove.me">
+  <meta property="og:description" content="Chia Amisola is an internet artist.">
+  <meta property="og:image" content="./preview.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://ifyouknewmewouldyoulove.me">
+  <meta property="twitter:title" content="Chia Amisola">
+  <meta property="twitter:description" content="Chia Amisola is an internet artist.">
+  <meta property="twitter:image" content="./preview.png">
+  <meta name="author" content="Chia Amisola">
+  <link rel="shortcut icon" href="favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155308379-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-155308379-1');
+
+  </script>
+
+
+  <link rel="stylesheet" href="assets/styles/default.css" type="text/css">
+  
+  <style type="text/css">
+    
+    #container, .container-wrapper, .container-column{
+      height: 100vh;
+    }
+  
+    .container-wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+    
+    .container-column{
+      display: block;
+      border-right:1px solid #000;
+      padding: 1em;
+      flex-basis: 0;
+      flex-grow: 1;
+      padding-bottom: 2em;
+    }
+    
+    .container-column ._iam{
+      border-bottom: 1px solid #000;
+      margin: 0 0 1em 0;
+      height: 40px;
+    }
+    
+    .container-column ._iam h1{
+    font-weight: normal;
+      font-size: 1.25em;
+    }
+    
+    .title{
+      position: absolute;
+      display: inline-block;
+      padding: .25em;
+      margin: 0;
+      background: #fff;
+      border: 1px solid #000;
+    }
+    
+    
+#cloud{
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  pointer-events: none;
+  
+    }
+    
+
+  #cloud img{
+    position: absolute;
+    max-width: 33vw;
+    padding: 1em;
+    pointer-events: all;
+  }
+  
+  </style>
+  
+</head>
+
+<body>
+
+
+  <div id="container">
+    <div class="container-wrapper">
+        
+        <div class="container-column">
+          <div class="_iam">
+            <a href="index.html"><h1>Back</h1></a>
+          </div>
+          
+        </div>
+        
+      
+    </div>
+
+
+        
+        <div id="cloud">
+          <img src="assets/images/cloud-h-1.gif" style="top: 130px; max-width: 220px;">
+          <img src="assets/images/cloud-h-3.gif" style="right: 2vw; top: 80px; max-width: 340px">
+          <img src="assets/images/cloud-h-2.gif" style="left: 15vw; top: 0;max-width: 320px;">
+          <img src="assets/images/cloud-h-4.gif" style="left: 0vw; top: 540px;max-width: 160px;">
+          <img src="assets/images/cloud-h-2.gif" style="left: 4vw; bottom: 2vh;max-width: 230px;">
+          <img src="assets/images/cloud-h-3.gif" style="left: 1vw; top: 1500px;max-width: 200px;">
+          <img src="assets/images/cloud-h-1.gif" style="left:4vw; top: 1000px; max-width: 280px;">
+          <img src="assets/images/cloud-h-1.gif" style="right: 2vw; top: 300px;max-width: 140px;">
+          <img src="assets/images/cloud-h-4.gif" style="right: 3vw; bottom: 10vh;max-width: 140px;">
+          <img src="assets/images/cloud-h-4.gif" style="right: 3vw; top: 1200px;max-width: 220px;">
+          <img src="assets/images/cloud-h-3.gif" style="top: 120vh;  right: 12vw; max-width: 320px;">
+          
+        
+        </div>
+    
+  </div>
+
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  
+  <script type="text/javascript">   
+      $( function() {
+    $( "#cloud img" ).draggable();
+  } );
+  </script>
+
+</body>
+
+</html>
