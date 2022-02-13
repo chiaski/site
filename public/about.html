@@ -47,52 +47,339 @@
 
 
   <link rel="stylesheet" href="assets/styles/default.css" type="text/css">
-  <link rel="stylesheet" href="assets/styles/home.css" type="text/css">
+  
+  <style type="text/css">
+    
+    #container, .container-wrapper, .container-column{
+      height: 100vh;
+    }
+  
+    .container-wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+    
+    .container-column{
+      display: block;
+      border-right:1px solid #000;
+      padding: 1em;
+      flex-basis: 0;
+      flex-grow: 1;
+      padding-bottom: 2em;
+    }
+    
+    .container-column ._iam{
+      border-bottom: 1px solid #000;
+      margin: 0 0 1em 0;
+      height: 40px;
+    }
+    
+    .container-column ._iam h1{
+    font-weight: normal;
+      font-size: 1.25em;
+    }
+    
+    .container-column ._this{
+      overflow-y: scroll;
+      max-height: calc(100% - 40px);
+    }
+    
+    .container-column ._this a{
+      font-size: 1.25em;
+      letter-spacing: -.25px;
+      width: 100%;
+      display: block;
+    }
+    
+    .container-column ._this a:hover{
+      color: red;
+    }
+    
+    .container-column ._this a[href*="https://"], .container-column ._this a[href*="mailto:"], .container-column ._this a[href*=".html"]{
+      color: blue;
+      text-decoration: none;
+    }
+    
+    .container-column ._this a[href*="https://"]:hover, .container-column ._this a[href*="mailto:"]:hover, .container-column ._this a[href*=".html"]:hover{
+     text-decoration: underline; 
+      text-decoration-thickness: 1px;
+    }
+    
+    .title{
+      position: absolute;
+      display: inline-block;
+      padding: .25em;
+      margin: 0;
+      background: #fff;
+      border: 1px solid #000;
+    }
+    
+    #no{
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      left: 0; top: 0;
+      background: #fff;
+      padding: 10vw;
+      font-size: 4em;
+      text-align: center;
+      letter-spacing: -2px;
+      display: none;
+    }
+  
+  </style>
+  
 </head>
 
 <body>
 
-
-  <!--  stuff  -->
-  
-  <div id="no">
-    <div>
-    Hmmmm...
-    </div>
-  </div>
+  <div id="no">I don't think this will work.</div>
 
   <div id="container">
     <div class="container-wrapper">
-      <main>
         
-
-        <div class="box" id="landing">
-          
-          <div class="box-inner">
-            <p class="__who">
-            A 
-              <span class="___shift">body</span>
-              can be
-              <span class="___performed">
-              <a onclick="share('blog')">read</a>, 
-              <a onclick="share('bisita')">loved</a>, 
-              <a onclick="share('abandoned')">abandoned</a>, 
-              <a onclick="share('punishing')">recovered</a>, 
-              <a onclick="share('mutilated')">mutilated</a>, 
-              <a onclick="share('forgiven')">forgiven</a>,
-              <a onclick="share('email')">forgotten</a>.
-              </span>
-              </p>
+        <div class="container-column">
+          <div class="_iam">
+            <h1>I am</h1>
           </div>
-          
-          <p class="___what"></p>
-          <a class="___where"  target="_blank">
-          <div class="___picture" style="background-image: url(myself/cloud.gif);">          
+          <div class="_this">
+            <a>Self-isolating</a>
+            <a>Defective</a>
+            <a>Broken</a>
+            <a>Dramatic</a>
+            <a>Irrational</a>
+            <a>Unworthy</a>
+            <a>Unlovable</a>
+            <a>Insensitive</a>
+            <a>Offputting</a>
+            <a>Quiet</a>
+            <a>Concerning</a>
+            <a>Chaotic</a>
+            <a>Unresponsive</a>
+            <a>Cold</a>
+            <a>Machinic</a>
+            <a>Distant</a>
+            <a>Straightforward</a>
+            <a>Small</a>
+            <a>Introverted</a>
+            <a>Stern</a>
+            <a>Tedious</a>
+            <a>Slow</a>
+            <a>Dry</a>
+            <a>Lifeless</a>
+            <a>Forgettable</a>
+            <a>Unremarkable</a>
+            <a>Exhausted</a>
+            <a>Inhuman</a>
+            <a>Robotic</a>
+            <a>Insufferable</a>
+            <a href="https://www.are.na/block/14564564" target="_blank" title="Fr fr fr">'Mid'</a>
+            <a>Unreliable</a>
+            <a>Defensive</a>
+            <a>Ignorant</a>
+            <a>Naive</a>
+            <a>Desperate</a>
+            <a>Bitter</a>
+            <a>Unwelcoming</a>
+            <a>Frigid</a>
+            <a>Insensible</a>
+            <a>Dull</a>
+            <a>Inane</a>
+            <a>Reckless</a>
+            <a>Redundant</a>
+            <a>Dispassionate</a>
+            <a>Austere</a>
+            <a>Aphantasia, sufferer</a>
+            <a>Unnecessary</a>
+            <a>Boring</a>
+            <a>Assertive</a>
+            <a title="Only when depressed">Witty</a>
+            <a>Warm</a>
+            <a>Observant</a>
+            <a>Reflective</a>
+            <a>Ignorable</a>
+            <a>Uninteresting</a>
+            <a>Hardworking</a>
+            <a>Unrelenting</a>
+            <a>Complex</a>
+            <a>Difficult</a>
+            <a>Challenging</a>
+            <a>Unreadable</a>
+            <a>Independent</a>
+            <a>Able</a>
+            <a>Idealistic</a>
+            <a>Dependable</a>
+            <a>Self-conscious</a>
+            <a>Proud</a>
           </div>
-            </a>
         </div>
         
-      </main>
+        <div class="container-column">
+          <div class="_iam">
+            <h1>So I try to</h1>
+          </div>
+          <div class="_this">
+            <a>Listen</a>
+            <a>Hope</a>
+            <a>Work</a>
+            <a>Believe</a>
+            <a>Invent</a>
+            <a title="I know how to do nothing else." href="https://www.are.na/block/14924272" target="_blank">Create</a>
+            <a href="https://www.discogs.com/wantlist?user=chiaski" target="_blank" title="I am on Discogs.">Collect (Discogs)</a>
+            <a href="https://bandcamp.com/chiaski" target="_blank" title="I am on Bandcamp.">Collect (Bandcamp)</a>
+            <a>Convene</a>
+            <a>Ask</a>
+            <a>Mend</a>
+            <a>Remember</a>
+            <a href="mailto:hotemogirlfriend@gmail.com" title="Let's slowly talk, if that's okay with you">Email</a>
+            <a>Love</a>
+            <a>Institute</a>
+            <a>Author</a>
+            <a>Make</a>
+            <a>Write</a>
+            <a>Mend</a>
+            <a>Forgive</a>
+            <a>Observe</a>
+            <a>Produce</a>
+            <a>Inaugurate</a>
+            <a>Design</a>
+            <a>Sketch</a>
+            <a>Fasten</a>
+            <a>Curate</a>
+            <a>Collect</a>
+            <a>Archive</a>
+            <a>Record</a>
+            <a>Platform</a>
+            <a>Speak</a>
+            <a>Try</a>
+            <a>Walk</a>
+            <a>Shoot</a>
+            <a>Manufacture</a>
+            <a>Breathe</a>
+            <a>Pray</a>
+            <a>Sense</a>
+            <a>Reflect</a>
+            <a>Materialize</a>
+            <a>Gather</a>
+            <a>Manifest</a>
+          </div>
+        </div>
+      
+        <div class="container-column">
+          <div class="_iam">
+            <h1>In the form of</h1>
+          </div>
+          <div class="_this">
+            <a>Websites (poetic)</a>
+            <a>Websites</a>
+            <a>Tools</a>
+            <a href="https://figma.com" target="_blank" title="I am an incoming Product Designer at Figma & currently a Friends of Figma leader.">Tools, for design</a>
+            <a>Net art</a>
+            <a>Poetry</a>
+            <a>Storytelling</a>
+            <a>Worldbuilding</a>
+            <a href="https://developh.org" title="The most important thing I have done with my life, community for intersectional Filipino technologists." target="_blank">Gathering</a>
+            <a title="Through all things?">Love</a>
+            <a href="https://chias.blog" target="_blank" title="Chias.blog, since 2016 & on Wordpress and all">Blogging</a>
+            <a>Systems</a>
+            <a>Space</a>
+            <a href="https://designatyale.com" target="_blank" title="A student-run design studio at Yale University.">Design</a>
+            <a href="https://chi.itch.io" target="_blank" title="I like to create tiny games.">Games</a>
+            <a href="https://thesoundof.love" target="_blank" title="I heard love in the YouTube comments section (2022)">Comments</a>
+            <a>Theory</a>
+            <a>Zines</a>
+            <a>Talks</a>
+            <a>Maintenance</a>
+            <a href="https://badinter.net" target="_blank" title="A music blog I am running.">Music writing</a>
+            <a>Resources</a>
+            <a>Archival</a>
+            <a>Cartography</a>
+            <a>Products</a>
+            <a>Radio</a>
+            <a>Artist books</a>
+            <a>Digests</a>
+            <a>Essays</a>
+            <a>Zines</a>
+            <a href="https://instagram.com/hotemogf" target="_blank" title="Pretty things I see or more digital performance if you're weird and overthink about that">Pictures</a>
+            <a>Posters</a>
+            <a>Tapes</a>
+            <a>Wireframes</a>
+            <a>Sound art</a>
+            <a>Software</a>
+            <a>Loops</a>
+            <a>Community</a>
+            <a>Writing</a>
+            <a>Film</a>
+            <a>Curricula</a>
+            <a>Ambient music</a>
+            <a>Applications</a>
+            <a>Tapes</a>
+            <a>Records</a>
+            <a>Love letters</a>
+            <a>Reviews</a>
+            <a>Short videos</a>
+            <a>Durational art</a>
+            <a>Diary entries</a>
+            <a>Sketches</a>
+            <a>Systems design</a>
+            <a>Interactive fiction</a>
+          </div>
+        </div>
+      
+        <div class="container-column">
+          <div class="_iam">
+            <h1>In awe of</h1>
+          </div>
+          <div class="_this">
+            <a>People</a>
+            <a>Machines</a>
+            <a>The in-between of ^</a>
+            <a>Fantasy</a>
+            <a>Earth</a>
+            <a>The internet</a>
+            <a>The internet & memory</a>
+            <a>Engines</a>
+            <a>Memorymaking</a>
+            <a>Manila</a>
+            <a>Environmental sounds</a>
+            <a>Graphic design theory</a>
+            <a>Toolsmaking</a>
+            <a>Authorship</a>
+            <a>Human universals</a>
+            <a>Ambience</a>
+            <a>Nothingness</a>
+            <a>End-of-life</a>
+            <a>Feelings</a>
+            <a>Dreams</a>
+            <a>Poetics</a>
+            <a href="clouds.html" title="Go to a cloud field">Clouds</a>
+            <a>Religion, as concept</a>
+            <a>Wonder</a>
+            <a>Encyclopedias</a>
+            <a>Browsers</a>
+            <a>Radical pedagogy</a>
+            <a>Urban planning</a>
+            <a>Libraries</a>
+            <a>Non-human sounds</a>
+            <a>Noise as music</a>
+            <a>Maps</a>
+            <a>Right to death</a>
+            <a>Slow cinema</a>
+            <a>Retro hardware</a>
+            <a href="https://bianca.digital/" target="_blank" title="For over half a decade now.">My friends (Bianca)</a>
+            <a href="https://moiras.cargo.site/" target="_blank" title="Moe!">My friends (Moe)</a>
+            <a>God, as a concept</a>
+            <a>Fiction</a>
+            <a>Long things</a>
+            <a>Dictionaries</a>
+            <a href="https://en.wikipedia.org/wiki/User:Chiaski" target="_blank" title="Very occasional editor.">Wikipedia</a>
+            <a>Farms</a>
+            <a>Digital intimacy</a>
+            <a>Generative art</a>
+          </div>
+        </div>
+        
     </div>
 
 
@@ -103,6 +390,29 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  
+  <script type="text/javascript">
+    $(document).tooltip({tooltipClass: "title"});
+      $( function() {
+    $( "._this" ).sortable();
+  } );
+    
+    
+    if(localStorage.getItem("love") !== null &&  (localStorage.getItem("love")).toLowerCase() == "yes"){
+      // good
+    } else{
+      let reveal = prompt("Do you believe that you could love anyone if you got to know them enough? (Yes or No)")
+
+        if (reveal.toLowerCase() == "yes") {
+          localStorage.setItem("love", "yes");
+         alert("Me too.");
+        } else{
+          $("#no").fadeIn("slow").css("display", "flex");
+        }
+
+    }
+
+  </script>
 
 </body>
 
