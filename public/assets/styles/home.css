@@ -23,13 +23,14 @@ a {
 
 #landing {
   height: 100vh;
-  overflow: hidden;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  vertical-align: top; }
   #landing .box-inner {
     padding: 2em;
-    margin-top: -1em; }
+    margin-top: -1em;
+    vertical-align: top; }
   #landing .___shift {
     text-decoration: underline;
     text-decoration-thickness: 2px; }
@@ -46,9 +47,7 @@ a {
     -webkit-transition-delay: .25s;
     transition-delay: .25s; }
   #landing .box-inner {
-    display: flex;
-    align-content: center;
-    align-items: center; }
+    display: flex; }
   #landing select.__who,
   #landing option {
     font-size: .9em;
@@ -59,33 +58,22 @@ a {
     line-height: 90%;
     display: inline-block; }
   #landing p.__who {
+    width: 100vw;
     text-indent: 7.5vw;
-    font-size: 3.2em;
-    letter-spacing: -2.4px;
+    font-size: 2.4em;
+    letter-spacing: -1.5px;
     line-height: 90%;
-    margin: 0;
+    margin: 0 2.5vw;
     padding: 0;
     padding-right: 1em; }
+    #landing p.__who a {
+      display: inline;
+      color: #000; }
     #landing p.__who a:hover {
       cursor: pointer;
-      font-style: italic; }
-  #landing p.___what {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    margin-top: auto;
-    margin-bottom: 0;
-    font-size: 2.8em;
-    line-height: 100%;
-    padding: .5em;
-    letter-spacing: -2px;
-    z-index: 9; }
-  #landing p.___what sup {
-    padding: .25em;
-    font-size: .5em;
-    letter-spacing: -.5px;
-    border-radius: 20px; }
+      color: blue; }
+  #landing p.__who:hover a.h:not(:hover) {
+    opacity: 0.5; }
   @media only screen and (max-width: 600px) {
     #landing {
       max-height: 100vh; }

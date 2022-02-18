@@ -65,7 +65,6 @@
     <div class="container-wrapper">
       <main>
         
-
         <div class="box" id="landing">
           
           <div class="box-inner">
@@ -86,8 +85,8 @@
           </div>
           
           <p class="___what"></p>
-          <a class="___where"  target="_blank">
-          <div class="___picture" style="background-image: url(myself/cloud.gif);">          
+          <a class="___where" href="about.html" target="_blank">
+          <div class="___picture">          
           </div>
             </a>
         </div>
@@ -178,7 +177,7 @@
     
     var for_a_child = `
               <a>thankless</a>,
-              <a>suicidal</a>,
+              <a>discarded</a>,
               <a>narcisisstic</a>,
               <a>fundamentally broken</a>,
               <a>unworthy of love</a>.
@@ -202,22 +201,22 @@
       switch(i){
         case 0: // body
           $(".___performed").html(for_a_body);
-          $(".___picture").css("background-image", "url(myself/cloud.gif)");
+//          $(".___picture").css("background-image", "url(myself/cloud.gif)");
           break;
           
         case 1: // machine
           $(".___performed").html(for_a_machine);
-          $(".___picture").css("background-image", "url(myself/machine.gif)");
+//          $(".___picture").css("background-image", "url(myself/machine.gif)");
           break;
           
         case 2: // child
           $(".___performed").html(for_a_child);
-          $(".___picture").css("background-image", "url(myself/cctv.gif)");
+//          $(".___picture").css("background-image", "url(myself/cctv.gif)");
           break;
           
         case 3: // memory
           $(".___performed").html(for_a_memory);
-          $(".___picture").css("background-image", "url(myself/donttouchme.gif)");
+//          $(".___picture").css("background-image", "url(myself/donttouchme.gif)");
           break;
       }
       
@@ -231,77 +230,80 @@
         case "blog":
           
           $(".___where").attr("href", "https://chias.blog")
-          $(".___picture").css("background-image", "url(myself/blog.gif)");
-          $(".___what").html("I have written over 2.5 million words since 2010.  Maybe we should all know less about each other... and I have nothing left to say.");
+//          $(".___picture").css("background-image", "url(myself/blog.gif)");
+          $(".__who").append(" <a class='h'  href='https://chias.blog' target='_blank'>I have written over 2.5 million words since 2010.  Maybe we should all know less about each other... and I have nothing left to say.</a> ");
           break;
           
         case "bisita":
           $(".___where").attr("href", "https://chi.itch.io/bisita")
-          $(".___picture").css("background-image", "url(myself/bisita.gif)");
-          $(".___what").html("Bisita is a recollection of the Holy Week ritual named after it. (2021, Net Art)");
+//          $(".___picture").css("background-image", "url(myself/bisita.gif)");
+          $(".__who").append(" <a class='h'  target='_blank' href='https://chi.itch.io/bisita'>Bisita is a recollection of the Holy Week ritual named after it. (2021, Net Art)</a> ");
           break;
           
         case "abandoned":
           $(".___where").attr("href", "https://chiaski.github.io/i-love-it-when-you/")
-          $(".___picture").css("background-image", "url(myself/iloveitwhen.gif)");
-          $(".___what").html("A love letter to the people in my life. (2021, Net Art)");
+//          $(".___picture").css("background-image", "url(myself/iloveitwhen.gif)");
+          $(".___what").html("");
+          $(".__who").append("<a class='h' href='https://chiaski.github.io/i-love-it-when-you/' target='_blank'>A love letter to the people in my life. (2021, Net Art)</a> ");
           break;
           
         case "punishing":
-          $(".___where").attr("href", "https://chia.design/punishing/")
-          $(".___picture").css("background-image", "url(myself/punishing.gif)");
-          $(".___what").html("On the internet, digital extremism, and the third-world left behind. (2020, Writing)");
+          $(".___where").attr("href", "./punishing")
+//          $(".___picture").css("background-image", "url(myself/punishing.gif)");
+          
+          $(".__who").append("<a class='h' href='/punishing' target='_blank'>On the internet, digital extremism, and the third-world left behind. (2020, Writing)</a> ");
           break;
           
         case "mutilated":
           $(".___where").attr("href", "https://lettered.herokuapp.com/")
-          $(".___picture").css("background-image", "url(myself/round.gif)");
-          $(".___what").html("A mildly-defunct exploration of maps, memory, and shared spaces. (2019, Net Art)");
+//          $(".___picture").css("background-image", "url(myself/round.gif)");
+          $(".__who").append("<a class='h' href='https://lettered.herokuapp.com' target='_blank'>A mildly-defunct exploration of maps, memory, and shared spaces. (2019, Net Art)</a> ");
           break;
           
           
         case "forgiven":
           $(".___where").attr("href", "https://badinter.net")
-          $(".___picture").css("background-image", "url(myself/bad.gif)");
-          $(".___what").html("Something about music and what it means to people. And me making tapes. (2022)");
+//          $(".___picture").css("background-image", "url(myself/bad.gif)");
+          $(".__who").append("<a class='h' href='https://badinter.net' target='_blank'>Writing about music and what it means to people. (2022)</a> ");
           break;
           
           
         case "email":
           $(".___where").attr("href", "mailto:hotemogirlfriend@gmail.com")
-          $(".___picture").css("background-image", "url(myself/email.gif)");
-          $(".___what").html("Remember me at hotemogirlfriend@gmail.com");
+//          $(".___picture").css("background-image", "url(myself/email.gif)");
+          
+          $(".__who").append("<a class='h' href='mailto:hotemogirlfriend@gmail.com'>Say hello at hotemogirlfriend@gmail.com.</a> ");
           break;
       
         case "developh":
           $(".___where").attr("href", "https://developh.org")
-          $(".___picture").css("background-image", "url(myself/developh.gif)");
-          $(".___what").html("Running a community for intersectional Filipino technologists, Developh is the greatest thing I have done with my life so far.");
+//          $(".___picture").css("background-image", "url(myself/developh.gif)");
+          $(".___what").html("Running a community for intersectional Filipino technologists, Developh is the greatest thing I have done with my life so far. ");
           break;
           
         case "store":
           $(".___where").attr("href", "https://instagram.com/hotemogf")
-          $(".___picture").css("background-image", "url(myself/store.gif)");
+//          $(".___picture").css("background-image", "url(myself/store.gif)");
           $(".___what").html("Videos and signs of life");
           break;
           
         case "if":
           $(".___where").attr("href", "https://chiaski.github.io/if/")
-          $(".___picture").css("background-image", "url(myself/if.gif)");
+//          $(".___picture").css("background-image", "url(myself/if.gif)");
           $(".___what").html("Collected interactive fiction pieces from over the years.");
           break;
 
           
         case "arena":
           $(".___where").attr("href", "https://are.na/chia")
-          $(".___picture").css("background-image", "url(myself/arena.gif)");
+//          $(".___picture").css("background-image", "url(myself/arena.gif)");
           $(".___what").html("I am an avid user of the website Are.na.");
           break;
           
   
         case "music":
           $(".___where").attr("href", "https://www.discogs.com/user/chiaski");
-          $(".___picture").css("background-image", "url(myself/music.gif)");
+//          $(".___picture").css("background-image", "url(myself/music.gif)");
           $(".___what").html("I like to collect music, mostly records and tapes. Tracked on Discogs & Bandcamp. I don't rate music.");
           break;
   

@@ -42,14 +42,15 @@ a {
 
 #landing {
   height: 100vh;
-  overflow: hidden;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  vertical-align: top;
 
   .box-inner {
     padding: 2em;
     margin-top: -1em;
+    vertical-align: top;
   }
 
   .___shift {
@@ -76,8 +77,6 @@ a {
 
   .box-inner {
     display: flex;
-    align-content: center;
-    align-items: center;
   }
 
 
@@ -94,43 +93,30 @@ a {
   }
 
   p.__who {
+    width: 100vw;
     text-indent: 7.5vw;
-    font-size: 3.2em;
-    letter-spacing: -2.4px;
+    font-size: 2.4em;
+    letter-spacing: -1.5px;
     line-height: 90%;
-    margin: 0;
+    margin: 0 2.5vw;
     padding: 0;
     padding-right: 1em;
+    
+    a{
+      display: inline;
+      color: #000;
+    }
 
     a:hover {
       cursor: pointer;
-      font-style: italic;
+      color: blue;
     }
 
   }
-
-
-  p.___what {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    margin-top: auto;
-    margin-bottom: 0;
-    font-size: 2.8em;
-    line-height: 100%;
-    padding: .5em;
-    letter-spacing: -2px;
-    z-index: 9;
-  }
-
-  p.___what sup {
-    padding: .25em;
-    font-size: .5em;
-    letter-spacing: -.5px;
-    border-radius: 20px;
-  }
-
+  
+  p.__who:hover a.h:not(:hover){
+    opacity: 0.5;
+}
 
   @media only screen and (max-width: 600px) {
 

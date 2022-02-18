@@ -20,14 +20,14 @@
   <meta property="og:url" content="https://ifyouknewmewouldyoulove.me">
   <meta property="og:title" content="ifyouknewmewouldyoulove.me">
   <meta property="og:description" content="Chia Amisola is an internet artist.">
-  <meta property="og:image" content="./preview.png">
+  <meta property="og:image" content="https://ifyouknewmewouldyoulove.me/preview.png">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://ifyouknewmewouldyoulove.me">
   <meta property="twitter:title" content="Chia Amisola">
   <meta property="twitter:description" content="Chia Amisola is an internet artist.">
-  <meta property="twitter:image" content="./preview.png">
+  <meta property="twitter:image" content="https://ifyouknewmewouldyoulove.me/preview.png">
   <meta name="author" content="Chia Amisola">
   <link rel="shortcut icon" href="favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -50,23 +50,63 @@
   
   <style type="text/css">
     
-    #container, .container-wrapper, .container-column{
-      height: 100vh;
+    *{
+      box-sizing: border-box;
     }
+    
+    #container{
+      display: flex;
+      background: red;
+      height: 100vh;
+      max-height: 100vh;
+      border: 5px solid green;
+    }
+  
   
     .container-wrapper{
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
+      max-height: 100vh;
+      padding: 1em;
+    }
+    
+    .container-row{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .container-row._things{
+      height: calc(100% - 2em);
+      background: cyan;
+      overflow-y: scroll;
+    }
+    
+    .introduction{
+      border-bottom: 1px solid #000;
+    }
+    
+    .newsletter{
+      float: right;
+    }
+    
+    .newsletter input{
+      font-family: "Times New Roman";
+      font-size: .75em;
     }
     
     .container-column{
-      display: block;
       border-right:1px solid #000;
-      padding: 1em;
+      padding: 1em .5em;
       flex-basis: 0;
       flex-grow: 1;
-      padding-bottom: 2em;
+      height: 100%;
+      overflow-y: scroll;
+    }
+    
+    .container-column:last-of-type{
+      border-right: 0;
     }
     
     .container-column ._iam{
@@ -96,12 +136,12 @@
       color: red;
     }
     
-    .container-column ._this a[href*="https://"], .container-column ._this a[href*="mailto:"], .container-column ._this a[href*=".html"]{
+    .container-column ._this a[href*="https://"], .container-column ._this a[href*="mailto:"], .container-column ._this a[href*="."]{
       color: blue;
       text-decoration: none;
     }
     
-    .container-column ._this a[href*="https://"]:hover, .container-column ._this a[href*="mailto:"]:hover, .container-column ._this a[href*=".html"]:hover{
+    .container-column ._this a[href*="https://"]:hover, .container-column ._this a[href*="mailto:"]:hover, .container-column ._this a[href*="."]:hover{
      text-decoration: underline; 
       text-decoration-thickness: 1px;
     }
@@ -138,7 +178,21 @@
 
   <div id="container">
     <div class="container-wrapper">
+      
+      <div class="container-row">
+        <div class="introduction">
+      <p>Introduction here. Oh no</p>
+        </div>
+        <div class="newsletter">
+        <form action="https://tinyletter.com/weeaboo" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/weeaboo', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+          <input type="text" style="width:140px" name="email" placeholder="Very rare newsletter"  id="tlemail" />
+          <input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" /></form>
         
+        </div>
+        
+      </div>
+      
+      <div class="container-row _things">
         <div class="container-column">
           <div class="_iam">
             <h1>I am</h1>
@@ -174,7 +228,7 @@
             <a>Inhuman</a>
             <a>Robotic</a>
             <a>Insufferable</a>
-            <a href="https://www.are.na/block/14564564" target="_blank" title="Fr fr fr">'Mid'</a>
+            <a href="https://www.are.na/block/14564564" target="_blank" title="Fr fr fr">Mid</a>
             <a>Unreliable</a>
             <a>Defensive</a>
             <a>Ignorant</a>
@@ -184,6 +238,7 @@
             <a>Unwelcoming</a>
             <a>Frigid</a>
             <a>Insensible</a>
+            <a>Evil</a>
             <a>Dull</a>
             <a>Inane</a>
             <a>Reckless</a>
@@ -221,11 +276,12 @@
           </div>
           <div class="_this">
             <a>Listen</a>
+            <a href="https://last.fm/user/chiaski" target="_blank" title="Because my mind needs it.">Listen, to music</a>
             <a>Hope</a>
-            <a>Work</a>
+            <a href="./resume" title="Resumé">Work</a>
             <a>Believe</a>
             <a>Invent</a>
-            <a title="I know how to do nothing else." href="https://www.are.na/block/14924272" target="_blank">Create</a>
+            <a title="Without it I am nothing." href="https://www.are.na/block/14924272" target="_blank">Create</a>
             <a href="https://www.discogs.com/wantlist?user=chiaski" target="_blank" title="I am on Discogs.">Collect (Discogs)</a>
             <a href="https://bandcamp.com/chiaski" target="_blank" title="I am on Bandcamp.">Collect (Bandcamp)</a>
             <a>Convene</a>
@@ -236,18 +292,20 @@
             <a>Love</a>
             <a>Institute</a>
             <a>Author</a>
+            <a href="https://twitter.com/hotemogf" target="_blank" title="Most active here, probably">Tweet</a>
             <a>Make</a>
             <a>Write</a>
             <a>Mend</a>
             <a>Forgive</a>
             <a>Observe</a>
+            <a href="mailto:hotemogirlfriend@gmail.com" title="Email/DM me if you don't have my number yet so I can give it to you">Text</a>
             <a>Produce</a>
             <a>Inaugurate</a>
-            <a>Design</a>
+            <a href="https://figma.com/@chia" target="_blank" title="I am on Figma Community.">Design, for products</a>
             <a>Sketch</a>
             <a>Fasten</a>
             <a>Curate</a>
-            <a>Collect</a>
+            <a href="https://are.na/chia" target="_blank" title="I am on Are.na.">Collect</a>
             <a>Archive</a>
             <a>Record</a>
             <a>Platform</a>
@@ -276,27 +334,33 @@
             <a>Tools</a>
             <a href="https://figma.com" target="_blank" title="I am an incoming Product Designer at Figma & currently a Friends of Figma leader.">Tools, for design</a>
             <a>Net art</a>
+            <a href="https://chiaski.github.io/if" target="_blank" title="Selected IF works">Interactive fiction</a>
             <a>Poetry</a>
+            <a title="Working on my thesis!">Engines</a>
             <a>Storytelling</a>
             <a>Worldbuilding</a>
             <a href="https://developh.org" title="The most important thing I have done with my life, community for intersectional Filipino technologists." target="_blank">Gathering</a>
             <a title="Through all things?">Love</a>
             <a href="https://chias.blog" target="_blank" title="Chias.blog, since 2016 & on Wordpress and all">Blogging</a>
             <a>Systems</a>
+            <a href="https://spotify.design" target="_blank" title="I interned as  Product Designer under Spotify's Design Systems team in Summer 2021.">Systems, for design</a>
+            <a>Making 'making'</a>
             <a>Space</a>
             <a href="https://designatyale.com" target="_blank" title="A student-run design studio at Yale University.">Design</a>
             <a href="https://chi.itch.io" target="_blank" title="I like to create tiny games.">Games</a>
             <a href="https://thesoundof.love" target="_blank" title="I heard love in the YouTube comments section (2022)">Comments</a>
             <a>Theory</a>
             <a>Zines</a>
-            <a>Talks</a>
+            <a href="https://ifyouknewmewouldyoulove.me/fantasy" target="_blank" title="A sampling from my talk at UX+, Design is Fantasy">Talks</a>
             <a>Maintenance</a>
             <a href="https://badinter.net" target="_blank" title="A music blog I am running.">Music writing</a>
             <a>Resources</a>
             <a>Archival</a>
             <a>Cartography</a>
             <a>Products</a>
+            <a href="https://tinyletter.com/weeaboo" target="_blank" title="I have a newsletter I send out very rarely.">Newsletters</a>
             <a>Radio</a>
+            <a>Graphic design</a>
             <a>Artist books</a>
             <a>Digests</a>
             <a>Essays</a>
@@ -322,8 +386,6 @@
             <a>Durational art</a>
             <a>Diary entries</a>
             <a>Sketches</a>
-            <a>Systems design</a>
-            <a>Interactive fiction</a>
           </div>
         </div>
       
@@ -339,26 +401,37 @@
             <a>Earth</a>
             <a>The internet</a>
             <a>The internet & memory</a>
+            <a href="./punishing/index.html" title="On the Punishing of the Philippines. (2020)">The internet & extremism</a>
             <a>Engines</a>
             <a>Memorymaking</a>
             <a>Manila</a>
+            <a>Internet adolescences</a>
+            <a>Peer-to-peer web</a>
             <a>Environmental sounds</a>
             <a>Graphic design theory</a>
             <a>Toolsmaking</a>
             <a>Authorship</a>
-            <a>Human universals</a>
+            <a href="https://twitter.com/hotemogf/status/1479593154064101381" target="_blank" title="You can barely see it, but there's a long poster here made off Donald Brown's 'Human Universals' list">Human universals</a>
+            <a>The mundane</a>
+            <a href="https://philippine.design" target="_blank" title="An in-progress project">Filipino design</a>
             <a>Ambience</a>
             <a>Nothingness</a>
             <a>End-of-life</a>
-            <a>Feelings</a>
+            <a>Solitude</a>
             <a>Dreams</a>
+            <a>FOSS</a>
+            <a>The Organization for Transformative Works</a>
+            <a>Henry Darger</a>
+            <a>Emic units</a>
             <a>Poetics</a>
+            <a>Sky</a>
             <a href="clouds.html" title="Go to a cloud field">Clouds</a>
-            <a>Religion, as concept</a>
+            <a href="https://www.are.na/chia/a-little-tinge-of-god" target="_blank" title="Just a little tinge of God">Religion, as concept</a>
             <a>Wonder</a>
             <a>Encyclopedias</a>
             <a>Browsers</a>
             <a>Radical pedagogy</a>
+            <a>Creator economies</a>
             <a>Urban planning</a>
             <a>Libraries</a>
             <a>Non-human sounds</a>
@@ -368,7 +441,8 @@
             <a>Slow cinema</a>
             <a>Retro hardware</a>
             <a href="https://bianca.digital/" target="_blank" title="For over half a decade now.">My friends (Bianca)</a>
-            <a href="https://moiras.cargo.site/" target="_blank" title="Moe!">My friends (Moe)</a>
+            <a href="https://twitter.com/Mwahahannah" target="_blank" title="Alannah">My friends (Alannah)</a>
+            <a href="https://shayvana.com/" target="_blank" title="Shayna">My friends (Shayna)</a>
             <a>God, as a concept</a>
             <a>Fiction</a>
             <a>Long things</a>
@@ -379,7 +453,8 @@
             <a>Generative art</a>
           </div>
         </div>
-        
+      </div>
+      
     </div>
 
 
@@ -392,7 +467,7 @@
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
   
   <script type="text/javascript">
-    $(document).tooltip({tooltipClass: "title"});
+    
       $( function() {
     $( "._this" ).sortable();
   } );
@@ -413,6 +488,26 @@
     }
 
   </script>
+  
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyBpF-oSBbr4Ju0OEBj4R8bBhzEpNclX98s",
+    authDomain: "chia-is.firebaseapp.com",
+    projectId: "chia-is",
+    storageBucket: "chia-is.appspot.com",
+    messagingSenderId: "675989079349",
+    appId: "1:675989079349:web:1afbc507124b944ebbb87c"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
 
 </body>
 
