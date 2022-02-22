@@ -1,0 +1,157 @@
+#container {
+  display: flex;
+  /*      background: red;*/
+  height: 100vh;
+  max-height: 100vh;
+  /*      border: 5px solid green;*/
+}
+
+
+.container-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-height: 100vh;
+  padding: 1em;
+}
+
+.container-row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  vertical-align: middle;
+  align-content: middle;
+}
+
+.container-row.intro {
+  border-bottom: 1px solid #000;
+  margin: 0 1em;
+  
+  input,
+  button {
+    font-family: "Times New Roman";
+    font-size: .75em;
+  }
+  
+}
+
+.container-row._things {
+  height: calc(95% - 2em);
+  /*      background: cyan;*/
+}
+
+.introduction p {
+  display: inline-block;
+  max-width: 450px;
+  line-height: 120%;
+  font-size: 1em;
+//  background: yellow;
+  margin-right: .5em;
+}
+
+.introduction button {
+  display: inline-block;
+  padding: .25em;
+  vertical-align: top;
+}
+
+.newsletter {
+  display: inline-block;
+  text-align: left;  
+//  background: red;
+  margin-bottom: 1em;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+  .container-row {
+    flex-wrap: wrap;
+  justify-content: flex-start;
+  }
+
+  .introduction {
+    padding: .5em 0;
+  }
+}
+
+
+
+.container-column {
+  border-right: 1px solid #000;
+  flex-basis: 0;
+  flex-grow: 1;
+  height: 100%;
+  padding: 1em;
+  min-width: 200px;
+  overflow-y: scroll;
+}
+
+.container-column:last-of-type {
+  border-right: 0;
+  margin: 0;
+}
+
+.container-column ._iam {
+  border-bottom: 1px solid #000;
+  margin: 0 0 .5em 0;
+}
+
+.container-column ._iam h1 {
+  font-weight: normal;
+  font-size: 1em;
+}
+
+.container-column ._this {
+  overflow-y: scroll;
+  max-height: calc(100% - 40px);
+}
+
+.container-column ._this a {
+  font-size: 1em;
+  letter-spacing: -.25px;
+  width: 100%;
+  display: block;
+}
+
+.container-column ._this a:hover {
+  color: red;
+}
+
+.container-column ._this a[href*="https://"],
+.container-column ._this a[href*="mailto:"],
+.container-column ._this a[href*="."] {
+  color: blue;
+  text-decoration: none;
+}
+
+.container-column ._this a[href*="https://"]:hover,
+.container-column ._this a[href*="mailto:"]:hover,
+.container-column ._this a[href*="."]:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+.title {
+  position: absolute;
+  display: inline-block;
+  padding: .25em;
+  margin: 0;
+  background: #fff;
+  border: 1px solid #000;
+}
+
+#no {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background: #fff;
+  padding: 10vw;
+  font-size: 4em;
+  text-align: center;
+  letter-spacing: -2px;
+  display: none;
+}

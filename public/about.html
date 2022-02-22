@@ -47,128 +47,7 @@
 
 
   <link rel="stylesheet" href="assets/styles/default.css" type="text/css">
-  
-  <style type="text/css">
-    
-    *{
-      box-sizing: border-box;
-    }
-    
-    #container{
-      display: flex;
-      background: red;
-      height: 100vh;
-      max-height: 100vh;
-      border: 5px solid green;
-    }
-  
-  
-    .container-wrapper{
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      max-height: 100vh;
-      padding: 1em;
-    }
-    
-    .container-row{
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-    }
-    
-    .container-row._things{
-      height: calc(100% - 2em);
-      background: cyan;
-      overflow-y: scroll;
-    }
-    
-    .introduction{
-      border-bottom: 1px solid #000;
-    }
-    
-    .newsletter{
-      float: right;
-    }
-    
-    .newsletter input{
-      font-family: "Times New Roman";
-      font-size: .75em;
-    }
-    
-    .container-column{
-      border-right:1px solid #000;
-      padding: 1em .5em;
-      flex-basis: 0;
-      flex-grow: 1;
-      height: 100%;
-      overflow-y: scroll;
-    }
-    
-    .container-column:last-of-type{
-      border-right: 0;
-    }
-    
-    .container-column ._iam{
-      border-bottom: 1px solid #000;
-      margin: 0 0 1em 0;
-      height: 40px;
-    }
-    
-    .container-column ._iam h1{
-    font-weight: normal;
-      font-size: 1.25em;
-    }
-    
-    .container-column ._this{
-      overflow-y: scroll;
-      max-height: calc(100% - 40px);
-    }
-    
-    .container-column ._this a{
-      font-size: 1.25em;
-      letter-spacing: -.25px;
-      width: 100%;
-      display: block;
-    }
-    
-    .container-column ._this a:hover{
-      color: red;
-    }
-    
-    .container-column ._this a[href*="https://"], .container-column ._this a[href*="mailto:"], .container-column ._this a[href*="."]{
-      color: blue;
-      text-decoration: none;
-    }
-    
-    .container-column ._this a[href*="https://"]:hover, .container-column ._this a[href*="mailto:"]:hover, .container-column ._this a[href*="."]:hover{
-     text-decoration: underline; 
-      text-decoration-thickness: 1px;
-    }
-    
-    .title{
-      position: absolute;
-      display: inline-block;
-      padding: .25em;
-      margin: 0;
-      background: #fff;
-      border: 1px solid #000;
-    }
-    
-    #no{
-      position: fixed;
-      width: 100vw;
-      height: 100vh;
-      left: 0; top: 0;
-      background: #fff;
-      padding: 10vw;
-      font-size: 4em;
-      text-align: center;
-      letter-spacing: -2px;
-      display: none;
-    }
-  
-  </style>
+  <link rel="stylesheet" href="assets/styles/chia.css" type="text/css">
   
 </head>
 
@@ -179,10 +58,11 @@
   <div id="container">
     <div class="container-wrapper">
       
-      <div class="container-row">
+      <div class="container-row intro">
         <div class="introduction">
-      <p>Introduction here. Oh no</p>
+          <p>Chia likes to think about the poetic potential of things: the browser, a file, a computer, themselves</p> <button class="_more">More?</button>
         </div>
+        <br>
         <div class="newsletter">
         <form action="https://tinyletter.com/weeaboo" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/weeaboo', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
           <input type="text" style="width:140px" name="email" placeholder="Very rare newsletter"  id="tlemail" />
@@ -291,7 +171,7 @@
             <a href="mailto:hotemogirlfriend@gmail.com" title="Let's slowly talk, if that's okay with you">Email</a>
             <a>Love</a>
             <a>Institute</a>
-            <a>Author</a>
+            <a title="Always writing a book, as is anyone else trying to write to cement themselves">Author</a>
             <a href="https://twitter.com/hotemogf" target="_blank" title="Most active here, probably">Tweet</a>
             <a>Make</a>
             <a>Write</a>
@@ -326,7 +206,7 @@
       
         <div class="container-column">
           <div class="_iam">
-            <h1>In the form of</h1>
+            <h1>In form of</h1>
           </div>
           <div class="_this">
             <a>Websites (poetic)</a>
@@ -384,7 +264,7 @@
             <a>Reviews</a>
             <a>Short videos</a>
             <a>Durational art</a>
-            <a>Diary entries</a>
+            <a href="https://www.are.na/chia/diary-lfivm6bn5sm" target="_blank">Diary entries</a>
             <a>Sketches</a>
           </div>
         </div>
@@ -443,6 +323,9 @@
             <a href="https://bianca.digital/" target="_blank" title="For over half a decade now.">My friends (Bianca)</a>
             <a href="https://twitter.com/Mwahahannah" target="_blank" title="Alannah">My friends (Alannah)</a>
             <a href="https://shayvana.com/" target="_blank" title="Shayna">My friends (Shayna)</a>
+            <a href="https://moiras.cargo.site/" target="_blank" title="Moi">My friends (Moi)</a>
+            <a href="https://moiras.cargo.site/" target="_blank" title="Moi">My friends (Moi)</a>
+            <a href="https://hellocarmen.cargo.site/" target="_blank" title="Carmen">My friends (Carmen)</a>
             <a>God, as a concept</a>
             <a>Fiction</a>
             <a>Long things</a>
@@ -472,6 +355,12 @@
     $( "._this" ).sortable();
   } );
     
+    var Chia = ["Chia likes to think about the poetic potential of things: the browser, a file, a computer, themselves", "Chia is a creative technologist creating radical things by way of the web, words, and worlding", "Chia is interested in finding the world underneath every person and thing", "Chia likes maps and how everything is reducible to coordinates & grids"]
+    
+    $("button._more").on("click", function(){
+      $(".introduction p").text(Chia[Math.floor(Math.random() * Chia.length)]);
+    });
+    
     
     if(localStorage.getItem("love") !== null &&  (localStorage.getItem("love")).toLowerCase() == "yes"){
       // good
@@ -489,25 +378,6 @@
 
   </script>
   
-  <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyBpF-oSBbr4Ju0OEBj4R8bBhzEpNclX98s",
-    authDomain: "chia-is.firebaseapp.com",
-    projectId: "chia-is",
-    storageBucket: "chia-is.appspot.com",
-    messagingSenderId: "675989079349",
-    appId: "1:675989079349:web:1afbc507124b944ebbb87c"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-</script>
 
 </body>
 

@@ -18,7 +18,8 @@ module.exports = {
     'main': './src/styles/main.scss',
     'default': './src/styles/default.scss',
     'portfolio': './src/styles/portfolio.scss',
-    'home': './src/styles/home.scss'
+    'home': './src/styles/home.scss',
+    'chia': './src/styles/chia.scss'
   },
 
   // ['./src/scripts/main.js', './src/styles/main.scss', './src/styles/portfolio.scss'],
