@@ -1,3 +1,20 @@
+@font-face {
+  font-family: 'Times Now';
+  src: url(../fonts/TimesNow-LightItalic.woff2) format("woff2"), url(../fonts/TimesNow-LightItalic.woff) format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Times Now';
+  src: url(../fonts/TimesNow-Light.woff2) format("woff2"), url(../fonts/TimesNow-Light.woff) format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+* {
+  font-family: "Times Now"; }
+
 #container {
   display: flex;
   /*      background: red;*/
@@ -25,8 +42,7 @@
   margin: 0 1em; }
   .container-row.intro input,
   .container-row.intro button {
-    font-family: "Times New Roman";
-    font-size: .75em; }
+    font-family: "Times Now"; }
 
 .container-row._things {
   height: calc(95% - 2em);
@@ -36,7 +52,7 @@
   display: inline-block;
   max-width: 450px;
   line-height: 120%;
-  font-size: 1em;
+  font-size: 1.25em;
   margin-right: .5em; }
 
 .introduction button {
@@ -75,17 +91,18 @@
 
 .container-column ._iam h1 {
   font-weight: normal;
-  font-size: 1em; }
+  font-size: 1.25em; }
 
 .container-column ._this {
   overflow-y: scroll;
   max-height: calc(100% - 40px); }
 
 .container-column ._this a {
-  font-size: 1em;
+  font-size: 1.25em;
   letter-spacing: -.25px;
   width: 100%;
-  display: block; }
+  display: block;
+  margin: .25em 0; }
 
 .container-column ._this a:hover {
   color: red; }

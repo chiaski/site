@@ -1,6 +1,5 @@
 
 $link-hover: blue;
-
 $serif: "Times New Roman", serif;
 
 body {
@@ -35,6 +34,54 @@ a {
     letter-spacing: -1px;
   }
   
+}
+
+// desperation
+
+#opener{
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;vertical-align: center;
+  color:#fff;
+  pointer-events: none;
+  animation: ifyouknewmewouldyoulovemebye 8s linear;
+  animation-iteration-count: 1;
+  display: none;
+}
+
+
+#opener:after {
+	content: "";
+  font-size: 2em;
+  letter-spacing: -2%;
+  color:#000;
+  animation: ifyouknewmewouldyouloveme 3s linear;
+  animation-delay: 2s;
+}
+
+@keyframes ifyouknewmewouldyouloveme {
+  0% { content:"if"; }
+  12.5% { content:"you"; }
+  25% { content:"knew"; }
+  37.5% { content:"me"; }
+  50% { content:"would"; }
+  62.5% { content:"you"; }
+  75% { content:"love"; }
+  87.5% { content:"me?"; }
+  87.5% { display:none; }
+}
+
+@keyframes ifyouknewmewouldyoulovemebye {
+  0% {background:#fff;}
+ 80% {background:#fff;}
+  100% {display: none;background:none;}
 }
 
 

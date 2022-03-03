@@ -1,3 +1,29 @@
+// Times Now
+
+@font-face {
+    font-family: 'Times Now';
+    src: url('../fonts/TimesNow-LightItalic.woff2') format('woff2'),
+        url('../fonts/TimesNow-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Times Now';
+    src: url('../fonts/TimesNow-Light.woff2') format('woff2'),
+        url('../fonts/TimesNow-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+$serif: "Times Now";
+
+*{
+    font-family: $serif;
+}
+
 #container {
   display: flex;
   /*      background: red;*/
@@ -30,8 +56,7 @@
   
   input,
   button {
-    font-family: "Times New Roman";
-    font-size: .75em;
+    font-family: $serif;
   }
   
 }
@@ -45,7 +70,7 @@
   display: inline-block;
   max-width: 450px;
   line-height: 120%;
-  font-size: 1em;
+  font-size: 1.25em;
 //  background: yellow;
   margin-right: .5em;
 }
@@ -100,7 +125,7 @@
 
 .container-column ._iam h1 {
   font-weight: normal;
-  font-size: 1em;
+  font-size: 1.25em;
 }
 
 .container-column ._this {
@@ -109,10 +134,11 @@
 }
 
 .container-column ._this a {
-  font-size: 1em;
+  font-size: 1.25em;
   letter-spacing: -.25px;
   width: 100%;
   display: block;
+margin: .25em 0;
 }
 
 .container-column ._this a:hover {
