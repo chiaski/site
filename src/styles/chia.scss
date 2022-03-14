@@ -90,7 +90,6 @@ body {
   /*      border: 5px solid green;*/
   
 @media only screen and (max-width: 800px) {
-  
   max-height: none;
   }
   
@@ -160,6 +159,7 @@ h5#opener {
 #index {
 
   max-height: calc(80vh - 6em);
+  overflow-y: scroll;
   //  height: calc(88% - 2.5em - 50px);
   /*      background: cyan;*/
 
