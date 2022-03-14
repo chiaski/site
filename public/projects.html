@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
+<!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
+<!--[if IE 8]><html class="preIE9"><![endif]-->
+<!--[if gte IE 9]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <meta http-equielophv="X-UA-Compatible" content="ie=edge">
+  <title>ifyouknewmewouldyoulove.me index</title>
+  <meta name="title" content="Chia Amisola">
+  <meta name="description" content="Chia Amisola is an internet artist.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ifyouknewmewouldyoulove.me">
+  <meta property="og:title" content="ifyouknewmewouldyoulove.me">
+  <meta property="og:description" content="Chia Amisola is an internet artist.">
+  <meta property="og:image" content="https://ifyouknewmewouldyoulove.me/preview.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://ifyouknewmewouldyoulove.me">
+  <meta property="twitter:title" content="Chia Amisola">
+  <meta property="twitter:description" content="Chia Amisola is an internet artist.">
+  <meta property="twitter:image" content="https://ifyouknewmewouldyoulove.me/preview.png">
+  <meta name="author" content="Chia Amisola">
+  <link rel="shortcut icon" href="favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155308379-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-155308379-1');
+
+  </script>
+
+
+  <link rel="stylesheet" href="assets/styles/default.css" type="text/css">
+  <link rel="stylesheet" href="assets/styles/chia.css" type="text/css">
+  
+</head>
+
+<body>
+  
+
+  <div id="no">I don't think this will work.</div>
+
+  <div id="container" class="page-projects">
+    <div class="container-wrapper">
+      
+      <div class="container-row" id="cover">
+      <h1>Selected Work</h1>
+      </div>
+      
+      <div class="container-row" id="filters">
+        <button>Category</button>
+        <button>Category</button>
+        <button>Category</button>
+        <button>Category</button>
+        <button>Category</button>
+        <button>Category</button>
+      </div>
+      
+      <div class="container-row intro">
+        <div class="introduction">
+          <p>Chia likes to think about the poetic potential of things: the browser, a file, a computer, themselves</p> <button class="_more">More?</button>
+        </div>
+        <br>
+        <div class="newsletter">
+        <form action="https://tinyletter.com/weeaboo" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/weeaboo', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+          <input type="text" style="width:176px" name="email" placeholder="Very rare newsletter"  id="tlemail" />
+          <input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" /></form>
+        
+        </div>
+        
+      </div>
+      
+      
+      <div class="container-row _things">
+        <div class="container-column">
+          <div class="_iam">
+            <h1>I am</h1>
+          </div>
+          <div class="_work">
+            
+            <div class="__project">
+            <h3></h3>
+            </div>
+            
+          </div>
+        </div>
+        
+      
+      </div>
+      
+    </div>
+
+
+  </div>
+
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  
+  <script type="text/javascript">
+    
+      $( function() {
+    $( "._this" ).sortable();
+  } );
+    
+    var Chia = ["Chia likes to think about the poetic potential of things: the browser, a file, a computer, themselves", "Chia is a creative technologist creating radical things by way of the web, words, and worlding", "Chia is interested in finding the world underneath every person and thing", "Chia likes maps and how everything is reducible to coordinates & grids"]
+    
+    $("button._more").on("click", function(){
+      $(".introduction p").text(Chia[Math.floor(Math.random() * Chia.length)]);
+    });
+    
+    
+    if(localStorage.getItem("love") !== null &&  (localStorage.getItem("love")).toLowerCase() == "yes"){
+      // good
+    } else{
+      let reveal = prompt("Do you believe that you could love anyone if you got to know them enough? (Yes or No)")
+
+        if (reveal.toLowerCase() == "yes") {
+          localStorage.setItem("love", "yes");
+         alert("Me too.");
+        } else{
+          $("#no").fadeIn("slow").css("display", "flex");
+        }
+
+    }
+
+  </script>
+  
+
+</body>
+
+</html>

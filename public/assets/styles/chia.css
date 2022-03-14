@@ -1,3 +1,9 @@
+/* 
+
+    FONTS
+
+
+*/
 @font-face {
   font-family: 'Times Now';
   src: url(../fonts/TimesNow-LightItalic.woff2) format("woff2"), url(../fonts/TimesNow-LightItalic.woff) format("woff");
@@ -12,8 +18,36 @@
   font-style: normal;
   font-display: swap; }
 
-* {
-  font-family: "Times Now"; }
+@font-face {
+  font-family: 'Apercu Pro Mono';
+  src: url(../fonts/ApercuPro-Mono.woff2) format("woff2"), url(../fonts/ApercuPro-Mono.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Alliance';
+  src: url(../fonts/AllianceNo1-RegularItalic.woff2) format("woff2"), url(../fonts/AllianceNo1-RegularItalic.woff) format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Alliance';
+  src: url(../fonts/AllianceNo1-Regular.woff2) format("woff2"), url(../fonts/AllianceNo1-Regular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+/* 
+
+    SASS
+
+
+*/
+body {
+  font-size: 1em;
+  font-family: "Alliance"; }
 
 #container {
   display: flex;
@@ -26,7 +60,8 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  max-height: 100vh;
+  max-height: 95vh;
+  width: 100%;
   padding: 1em; }
 
 .container-row {
@@ -37,33 +72,101 @@
   vertical-align: middle;
   align-content: middle; }
 
-.container-row.intro {
-  border-bottom: 1px solid #000;
-  margin: 0 1em; }
-  .container-row.intro input,
-  .container-row.intro button {
-    font-family: "Times Now"; }
+.container-row#intro {
+  min-width: 95vw;
+  padding: .5em 0; }
+  .container-row#intro a._more {
+    display: inline;
+    color: #eb80ff;
+    letter-spacing: -.25px; }
+  .container-row#intro a._more:hover {
+    cursor: pointer;
+    color: #67686A; }
+  .container-row#intro input {
+    font-size: .8em; }
 
-.container-row._things {
-  height: calc(95% - 2em);
+h5#opener {
+  font-size: .6em;
+  font-weight: normal;
+  margin: 0;
+  color: #67686A;
+  width: 100%;
+  display: block; }
+  h5#opener strong {
+    color: #eb80ff;
+    font-weight: normal; }
+
+#index {
+  height: calc(80vh - 6em);
   /*      background: cyan;*/ }
+  #index .container-column {
+    opacity: 0.9; }
+  #index .container-column ._this a {
+    letter-spacing: -.25px;
+    width: 100%;
+    display: block;
+    margin: .25em; }
+  #index .container-column ._this a:hover {
+    opacity: 1;
+    cursor: ns-resize; }
+  #index .container-column ._this {
+    overflow-y: scroll;
+    max-height: calc(100% - 40px);
+    font-family: "Alliance";
+    font-size: .8em;
+    color: #55585a;
+    padding: .5em .25em;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear; }
+  #index .container-column ._this a[href*="https://"],
+  #index .container-column ._this a[href*="mailto:"],
+  #index .container-column ._this a[href*="."] {
+    color: #eb80ff;
+    text-decoration: none; }
+  #index .container-column ._this a[href*="https://"]:hover,
+  #index .container-column ._this a[href*="mailto:"]:hover,
+  #index .container-column ._this a[href*="."]:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px; }
+  #index .container-column:hover a:not(:hover) {
+    opacity: 0.7; }
 
 .introduction p {
   display: inline-block;
   max-width: 450px;
   line-height: 120%;
-  font-size: 1.25em;
-  margin-right: .5em; }
-
-.introduction button {
-  display: inline-block;
-  padding: .25em;
-  vertical-align: top; }
+  font-size: .8em;
+  font-family: "Alliance";
+  text-indent: 40px;
+  color: #67686A; }
 
 .newsletter {
   display: inline-block;
-  text-align: left;
-  margin-bottom: 1em; }
+  text-align: left; }
+  .newsletter input[type=text] {
+    color: #67686A;
+    font-family: "Apercu Pro Mono";
+    letter-spacing: -.5px;
+    background: #eaebeb;
+    outline: 0;
+    border: 1px transparent; }
+  .newsletter input[type=submit] {
+    color: #55585a;
+    font-family: "Apercu Pro Mono" !important;
+    border: 1px transparent;
+    outline: 0;
+    text-transform: uppercase; }
+  .newsletter input[type=submit]:hover {
+    color: #eb80ff;
+    box-shadow: 0 0 10px #eb80ff;
+    border: 1px solid #eb80ff; }
+  .newsletter input[type=text]:focus {
+    outline: none !important;
+    box-shadow: 0 0 10px #eb80ff;
+    border: 1px solid #eb80ff; }
 
 @media only screen and (max-width: 800px) {
   .container-row {
@@ -72,52 +175,45 @@
   .introduction {
     padding: .5em 0; } }
 
+.container-row#footer {
+  color: #67686A;
+  border-bottom: 1px solid #eaebeb;
+  padding: .25em 0 .5em 0; }
+  .container-row#footer h5 {
+    display: inline-block;
+    margin: 0;
+    font-weight: normal;
+    margin-right: 2.5em; }
+  .container-row#footer .contact {
+    font-size: .6em; }
+    .container-row#footer .contact a {
+      color: #eb80ff;
+      text-decoration: none; }
+
 .container-column {
-  border-right: 1px solid #000;
+  border-right: 1px solid #eaebeb;
   flex-basis: 0;
   flex-grow: 1;
   height: 100%;
-  padding: 1em;
   min-width: 200px;
-  overflow-y: scroll; }
+  overflow-y: hidden; }
 
 .container-column:last-of-type {
   border-right: 0;
   margin: 0; }
 
 .container-column ._iam {
-  border-bottom: 1px solid #000;
-  margin: 0 0 .5em 0; }
+  padding: .25em 0;
+  border-bottom: 1px solid #eaebeb; }
 
 .container-column ._iam h1 {
   font-weight: normal;
-  font-size: 1.25em; }
-
-.container-column ._this {
-  overflow-y: scroll;
-  max-height: calc(100% - 40px); }
-
-.container-column ._this a {
+  font-family: "Times Now";
+  color: #67686A;
   font-size: 1.25em;
-  letter-spacing: -.25px;
-  width: 100%;
-  display: block;
-  margin: .25em 0; }
-
-.container-column ._this a:hover {
-  color: red; }
-
-.container-column ._this a[href*="https://"],
-.container-column ._this a[href*="mailto:"],
-.container-column ._this a[href*="."] {
-  color: blue;
-  text-decoration: none; }
-
-.container-column ._this a[href*="https://"]:hover,
-.container-column ._this a[href*="mailto:"]:hover,
-.container-column ._this a[href*="."]:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 1px; }
+  text-transform: uppercase;
+  padding: .15em .25em;
+  margin-bottom: 0; }
 
 .title {
   position: absolute;
@@ -139,4 +235,93 @@
   text-align: center;
   letter-spacing: -2px;
   display: none; }
+
+/*
+
+
+      OTHER PAGES
+
+
+*/
+#cover .inactive-links {
+  display: inline-block;
+  margin-left: 0;
+  margin-right: auto;
+  vertical-align: text-bottom; }
+
+#cover .inactive-links:hover a:not(:hover) {
+  opacity: 0.6; }
+
+#cover .inactive-links a {
+  font-family: "Times Now";
+  font-size: 2em;
+  display: inline-block;
+  color: #7e8183;
+  text-decoration: none;
+  letter-spacing: -1px;
+  margin: 0 .5em;
+  vertical-align: -38px;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -ms-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear; }
+
+#cover .inactive-links a._dead {
+  cursor: not-allowed; }
+
+#cover .social-links a {
+  font-family: "Apercu Pro Mono";
+  color: #7e8183;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: .5em;
+  display: inline-block;
+  padding: .25em;
+  line-height: 50px;
+  vertical-align: middle; }
+
+#cover .social-links a:hover {
+  color: #eb80ff; }
+
+@media only screen and (max-width: 800px) {
+  #cover .inactive-links a {
+    font-size: 1.5em;
+    margin: 0 .25em; }
+  #cover .social-links a {
+    line-height: 100%; } }
+
+.container-row#cover h1 {
+  font-family: "Times Now";
+  font-weight: normal;
+  letter-spacing: -2.5px;
+  font-size: 4em;
+  display: inline-block;
+  margin: 0; }
+
+.page-projects .container-row#filters {
+  display: flex;
+  display: none; }
+
+.page-projects p {
+  font-family: "Alliance";
+  color: #67686A;
+  font-weight: normal;
+  font-size: .8em;
+  letter-spacing: -.5px; }
+
+.func-accordion {
+  width: 100%; }
+  .func-accordion h4 {
+    text-transform: uppercase;
+    font-family: "Apercu Pro Mono";
+    font-weight: normal;
+    font-size: .5em;
+    border-bottom: 1px solid #eaebeb;
+    color: #55585a;
+    margin: .5em 0;
+    text-align: right; }
+  .func-accordion h4:hover {
+    cursor: n-resize; }
 
