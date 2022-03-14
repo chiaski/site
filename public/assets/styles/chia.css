@@ -51,10 +51,13 @@ body {
 
 #container {
   display: flex;
-  /*      background: red;*/
   height: 100vh;
   max-height: 100vh;
+  align-items: flex-start;
   /*      border: 5px solid green;*/ }
+  @media only screen and (max-width: 800px) {
+    #container {
+      max-height: none; } }
 
 .container-wrapper {
   display: flex;
@@ -63,6 +66,9 @@ body {
   max-height: 95vh;
   width: 100%;
   padding: 1em; }
+  @media only screen and (max-width: 800px) {
+    .container-wrapper {
+      max-height: none; } }
 
 .container-row {
   width: 100%;
@@ -97,8 +103,15 @@ h5#opener {
     font-weight: normal; }
 
 #index {
-  height: calc(80vh - 6em);
+  max-height: calc(80vh - 6em);
   /*      background: cyan;*/ }
+  @media only screen and (max-width: 800px) {
+    #index {
+      max-height: none; }
+      #index .container-column ._this {
+        height: 300px;
+        overflow-y: scroll;
+        overflow-x: hidden; } }
   #index .container-column {
     opacity: 0.9; }
   #index .container-column ._this a {
@@ -131,6 +144,17 @@ h5#opener {
   #index .container-column ._this a[href*="."]:hover {
     text-decoration: underline;
     text-decoration-thickness: 1px; }
+  #index .__sound {
+    border-bottom: 1px solid #eaebeb;
+    padding: 1em .5em; }
+    #index .__sound u {
+      font-family: "Apercu Pro Mono";
+      text-transform: uppercase;
+      font-size: .5em;
+      text-decoration: none;
+      border: 1px solid #eaebeb;
+      padding: .25em 1em;
+      border-radius: 20px; }
   #index .container-column:hover a:not(:hover) {
     opacity: 0.7; }
 
@@ -310,6 +334,20 @@ h5#opener {
   font-weight: normal;
   font-size: .8em;
   letter-spacing: -.5px; }
+
+audio {
+  border-radius: 50px;
+  height: 20px;
+  background: transparent;
+  outline: none;
+  border: none;
+  font-size: .8em; }
+
+audio::-webkit-media-controls-panel {
+  margin-left: -1.5em;
+  border: 0;
+  background: #fff;
+  outline: 0; }
 
 .func-accordion {
   width: 100%; }
