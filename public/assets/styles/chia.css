@@ -121,15 +121,9 @@ h5#opener {
   color: #eb80ff; }
 
 #index {
-  height: calc(80vh - 6em); }
-  @media only screen and (max-width: 800px) {
-    #index {
-      max-height: none; }
-      #index .container-column ._this {
-        height: 300px;
-        overflow-x: hidden; } }
+  height: auto; }
   #index .container-column ._this {
-    height: 95%;
+    max-height: calc(80vh - 6em);
     overflow-y: scroll;
     overflow-x: hidden;
     font-family: "Alliance";
@@ -167,6 +161,14 @@ h5#opener {
       border-radius: 20px; }
   #index .container-column:hover a:not(:hover) {
     opacity: 0.7; }
+  @media only screen and (max-width: 800px) {
+    #index {
+      max-height: none; }
+      #index .container-column {
+        height: auto; }
+      #index .container-column ._this {
+        height: 300px;
+        overflow-x: hidden; } }
 
 .introduction p {
   display: inline-block;
@@ -210,6 +212,7 @@ h5#opener {
     padding: .5em 0; } }
 
 .container-row#footer {
+  display: block;
   color: #67686A;
   border-bottom: 1px solid #eaebeb;
   padding: .25em 0 .5em 0; }
