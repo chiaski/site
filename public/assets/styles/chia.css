@@ -84,6 +84,8 @@ body {
 .container-row#intro {
   min-width: 95vw;
   padding: .5em 0; }
+  .container-row#intro p {
+    font-size: .8em; }
   .container-row#intro a._more {
     display: inline;
     color: #eb80ff;
@@ -109,7 +111,9 @@ h5#opener {
   opacity: 0.9; }
 
 .container-column ._this a {
+  font-size: .7em;
   letter-spacing: -.25px;
+  padding: .15em .25em;
   width: 100%;
   display: block;
   margin: .25em;
@@ -123,13 +127,11 @@ h5#opener {
 #index {
   height: auto; }
   #index .container-column ._this {
-    max-height: calc(80vh - 6em);
+    max-height: calc(75vh - 6em);
     overflow-y: scroll;
     overflow-x: hidden;
     font-family: "Alliance";
-    font-size: .8em;
     color: #55585a;
-    padding: .5em .25em;
     -webkit-transition: all .3s linear;
     -moz-transition: all .3s linear;
     -ms-transition: all .3s linear;
@@ -159,8 +161,6 @@ h5#opener {
       border: 1px solid #eaebeb;
       padding: .25em 1em;
       border-radius: 20px; }
-  #index .container-column:hover a:not(:hover) {
-    opacity: 0.7; }
   @media only screen and (max-width: 800px) {
     #index {
       max-height: none; }
@@ -181,7 +181,8 @@ h5#opener {
 
 .newsletter {
   display: inline-block;
-  text-align: left; }
+  text-align: left;
+  font-size: .8em; }
   .newsletter input[type=text] {
     color: #67686A;
     font-family: "Apercu Pro Mono";
@@ -296,7 +297,7 @@ h5#opener {
   border: 1px solid #55585a;
   padding: 1em;
   object-fit: contain;
-  position: absolute;
+  position: fixed;
   z-index: 999;
   mix-blend-mode: exclusion;
   backdrop-filter: grayscale(80%) blur(50px);
@@ -348,7 +349,7 @@ h5#opener {
   vertical-align: text-bottom; }
 
 #cover .inactive-links:hover a:not(:hover) {
-  opacity: 0.6; }
+  opacity: 0.3; }
 
 #cover .inactive-links a {
   font-family: "Times Now";
@@ -419,8 +420,7 @@ h5#opener {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 1em 0;
-  border-bottom: 1px solid #eaebeb; }
+  padding: 1em 0; }
 
 #page-projects #projects ._project {
   padding: .5em;
