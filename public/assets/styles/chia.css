@@ -152,7 +152,8 @@ h5#opener {
     cursor: pointer !important; }
   #index .__sound {
     border-bottom: 1px solid #eaebeb;
-    padding: 1em .5em; }
+    padding: 1em .5em;
+    font-size: .8em; }
     #index .__sound u {
       font-family: "Apercu Pro Mono";
       text-transform: uppercase;
