@@ -124,6 +124,19 @@ body {
 
 }
 
+.container-row#news{
+  
+  
+  a{
+    font-size: .8em;
+    width: 100%;
+  color: $p;
+    padding: .15em;
+    line-height: 20px;
+  }
+  
+}
+
 .container-row#intro {
   min-width: 95vw;
   padding: .5em 0;

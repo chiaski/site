@@ -53,7 +53,12 @@
 
 <body>
   
-
+<div id="cursor-chat-layer">
+  <input type="text" id="cursor-chat-box">
+</div>
+<script src="https://unpkg.com/cursor-chat"></script>
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/cursor-chat/dist/style.css"/>
+  
   <div id="no">I don't think this will work.</div>
   
   <div class="pc" data-pic="rainbow" style="top: 20vh;left: 30vw;">
@@ -145,7 +150,7 @@
           <a href="projects.html" title="Formal work and experiments">Work</a>
           <a onclick="pic('selfie');" title="What I'm currently working on and thinking about, plus a manifesto">Self</a>
           <a class="_dead" title="What I'm currently working on and thinking about, plus a manifesto">Now</a>
-          <a href="https://chias.blog" target="_blank" class="_dead" title="Here is where Chia blogs">Blog</a>
+          <a href="https://chias.blog" target="_blank" title="Here is where Chia blogs">Blog</a>
         </div>
         
         <div class="social-links">
@@ -157,11 +162,19 @@
       
       </div>
       
+        <h4>News</h4>
+        <div class="container-row" id="news">
+          <marquee>
+        <a href="https://cloudy.freeforums.net/" target="_blank">✧･ﾟ: *✧･ﾟ:* Join my little general forum that I just launched: cloudy.freeforums.net ☽༓･*˚⁺</a>
+            
+        <a href="https://engine.lol" target="_blank">✧･ﾟ: *✧･ﾟ:* Help playtest my thesis ☽༓･*˚⁺</a>
+            </marquee>
+        </div>
       
       <h4>Links</h4>
       <div class="container-row"  id="intro">
         <div class="introduction">
-          <p>Chia likes to think about the poetic potential of things: the browser, a file, a computer, themselves. <a class="_more" onclick="more()">More?</a></p> 
+          <p>Chia is an internet artist that believes in the poetic potential of the web, words, worlding, and sometimes themselves.  <a class="_more" onclick="more()">More?</a></p> 
         </div>
         <br>
         <div class="newsletter">
